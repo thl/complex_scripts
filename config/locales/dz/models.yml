@@ -1,0 +1,18 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+dz:
+    activerecord:
+        # Model names will be kept in lower case. Invoke .capitalize or .titleize if you need them in uppercase.
+        models:
+            complex_scripts/language: 'སྐད་ཡིག་'
+                # one
+                # other
+        # Attribute names will be titleized.
+        attributes:
+            complex_scripts/language:
+                code: 'Code (ISO 369-3)'
+                locale: 'Locale'
+                title: 'Language Name'
+                unicode_codepoint_end: 'Unicode Codepoint End'
+                unicode_codepoint_start: 'Unicode Codepoint Start'
+                use_for_interface: 'Use for Interface'

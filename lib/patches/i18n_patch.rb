@@ -1,0 +1,11 @@
+module I18n
+  module Backend
+    class Simple
+      alias :old_translate :translate
+      
+      def translate(locale, key, options = {})
+        old_translate locale, key, {:count => 1}.merge(options)
+      end
+    end
+  end
+end

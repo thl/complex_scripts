@@ -1,0 +1,10 @@
+<% current_language = I18n.locale
+   form_tag complex_scripts_change_language_path do %>
+<%=  select_tag "id", options_for_select(
+	  I18n.available_locales.reject{|language| language==:root }.collect{|language|
+        language_metadata = LANGUAGES[language]
+	    lang_title = language_metadata.nil? ? language.to_s : t(language_metadata[:title], :locale => language)
+	    [ strip_tags(lang_title), language.to_s ] },
+	  :selected => current_language.to_s
+	  ), { :onchange => 'jQuery(this).parents("form:first").submit();', :style => 'width: 100px;' } %>
+<% end %>
