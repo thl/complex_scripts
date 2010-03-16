@@ -6,16 +6,16 @@ dz:
         record: '{{what}} ཁ་སྐོང་རྐྱབས།'
         this: 'ཁ་སྐོང་རྐྱབས།'
     advanced: 'མཐོ་རིམ་ཅན་།'
-    affirmation: 'Yes'
+    affirmation: 'ཨིན'
     all: '{{what}} ཆ་མཉམ།'
-    another: '{{what}} སོར་སོ་'
+    another: '{{what}} སོ་སོ་'
     application: 'ལག་ལེན་'
     associate:
         d: 'འབྲེལ་བ་ཡོད་པའི་ {{what}}'
         ion: '{{what}} ལུ་འབྲེལ་བ།'
         record: 'Associate {{what}} to {{whom}}'
         to: '{{what}} ལུ་མཉམ་སྦྲགས་འབད།'
-    available: 'ཐོབ་པའི་ {{what}}།'
+    available: 'ཡོད་པའི་ {{what}}།'
     back:
         this: 'རྒྱབ།'
         to: '{{what}} ལུ་ལོག།'
@@ -28,7 +28,7 @@ dz:
         record: '{{what}} ཆ་མེད་གཏང་།'
         this: 'ཆ་མེད་གཏང་།'
     changes: 'བསྒྱུར་བཅོས་ཚུ་'
-    configure: 'Configure'
+    configure: 'རིམ་སྒྲིག་འབད་'
     copyright:
         message:
             provider: '{{what}} འདི་ {{whom}} གིས་བྱིན་ཡོདཔ།'
@@ -39,11 +39,11 @@ dz:
         one: '{{what}} 1'
         other: '{{what}} {{count}}'
     create:
-        record: 'Create {{what}}'
+        record: '{{what}} གསར་བསྐྲུན་འབད།'
         this: 'གསར་བསྐྲུན་འབད།'
     delete:
         confirmation: 'ངེས་བདེན་ཨིན་ན་?'
-        successful: '{{what}} deleted succesfully.'
+        successful: '{{what}} མཐར་འཁྱོལ་ཅན་སྦེ་བཏོན་གཏང་ཡོདཔ།'
         this: 'བཏོན་གཏང་།'
     dzongkha: 'རྫོང་ཁ།'
     edit:
@@ -53,12 +53,12 @@ dz:
         failure: 'Error updating {{what}}.'
         record: '{{what}} ཞུན་དག'
         this: 'ཞུན་དག'
-        successful: '{{what}} was successfully updated.'
+        successful: '{{what}} མཐར་འཁྱོལ་ཅན་སྦེ་དུས་མཐུན་བཟོ་ཡོདཔ།'
     english: 'ཨིང་སྐད།'
     execute: 'Execute'
     for: '{{whom}} དོན་ལུ་ {{what}}'
     found: '{{what}} འཚོལ་ཐོབ་ཅི།'
-    get: 'Get {{what}}'
+    get: '{{what}} ལེན'
     go: 'འགྱོ།'
     home:
         this: 'ཁྱིམ།'
@@ -78,14 +78,16 @@ dz:
     media:
         none: 'བརྒྱུད་ལམ་ འཚོལ་མ་ཐོབ།'
     member: 'འཐུས་མི།'
+    more:
+        this: 'རྒྱས་བཤད'
     name:
         for: '{{what}} མིང་'
         in: 'Name ({{what}})'
-    negation: 'No'
+    negation: 'མེན'
     new:
         major: '{{what}} གཙོ་བོ་གསརཔ།'
         record: '{{what}} གསརཔ།'
-        successful: '{{what}} was successfully created.'
+        successful: '{{what}} མཐར་འཁྱོལ་ཅན་སྦེ་གསར་བསྐྲུན་འབད་ཡོདཔ།'
         this: 'གསརཔ་'
         under: '{{where}} འོག་ལུ་ {{what}} གསརཔ།'
     none: 'གཅིག་ཡང་མེནམ།'
@@ -109,12 +111,12 @@ dz:
         record: '{{what}} འཚོལ་ཞིབ།'
         results: 'ཞིབ་འཚོལ་ གྲུབ་འབྲས།'
         this: 'འཚོལ་ཞིབ།'
-        tips: 'search tips'
+        tips: 'འཚོལ་ཐངས།'
     select:
         all: 'ཆ་མཉམ་སེལ་འཐུ་འབད།'
     show : 'སྟོན།'
     tibetan:
-        script: 'Tibetan script'
+        script: 'བོད་ཡིག'
         transliteration: 'Tibetan transliteration'
     this: 'འདི་'
     translat:
@@ -123,7 +125,7 @@ dz:
     update:
         this: 'དུས་མཐུན་བཟོ་ནི།'
         d: 'Last updated {{when}}'
-    url_for_reference: 'URL for reference'
+    url_for_reference: 'ཁུངས་གཏུགས་ཡུ་ཨར་ཨེལ།'
     what_is: '{{what}} ག་ཅི་སྨོ?'
     
     date:
