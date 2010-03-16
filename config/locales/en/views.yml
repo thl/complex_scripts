@@ -108,6 +108,8 @@ en:
         results: 'Search Results'
         this: 'Search'
         tips: 'search tips'
+    see:
+        record: 'See {{what}}'
     select:
         all: 'Select all'
     show : 'Show'

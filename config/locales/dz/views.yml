@@ -99,6 +99,8 @@ dz:
         previous: 'ཧེ་མམ།'
     save: '{{what}} སྲུངས།'
     settings: 'སྒྲིག་སྟངས།'
+    see:
+        record: 'See {{what}}'
     sign:
         in: 'ནང་བསྐྱོད།'
         out: 'ཕྱིར་བསྐྱོད།'
