@@ -39,7 +39,7 @@ module ComplexScripts
       # lists, etc.).
       def encode
         return self if blank?
-        unicode_message = self.chars
+        unicode_message = self.mb_chars
         return_string = ""
         i=0
         while i<unicode_message.length
