@@ -138,7 +138,7 @@ module ComplexScripts
         code = codes.shift
         while code
           code = codes.shift while code && !code.is_tibetan_alphanumeric?
-          break if code.nil?
+          break unless code
           start_pos = original_size - codes.size - 1
           code = codes.shift while code && code.is_tibetan_alphanumeric?
           end_pos = original_size - codes.size - 2
