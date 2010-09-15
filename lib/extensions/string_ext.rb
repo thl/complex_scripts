@@ -39,7 +39,7 @@ module ComplexScripts
       # lists, etc.).
       def encode
         return self if blank?
-        unicode_message = self.chars
+        unicode_message = self.mb_chars
         return_string = ""
         i=0
         while i<unicode_message.length
@@ -57,7 +57,7 @@ module ComplexScripts
       alias :e :encode
       
       def base_letter(lang_code = nil)
-        letter = self.lstrip.chars
+        letter = self.lstrip.mb_chars
         return nil if letter.blank?
         case lang_code
         when 'jee', 'wme', 'san'
