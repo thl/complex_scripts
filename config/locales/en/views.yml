@@ -78,6 +78,8 @@ en:
     media:
         none: 'No media found'
     member: 'Member'
+    more:
+        this: 'More'
     name:
         for: '{{what}} Name'
         in: 'Name ({{what}})'
@@ -108,6 +110,8 @@ en:
         results: 'Search Results'
         this: 'Search'
         tips: 'search tips'
+    see:
+        record: 'See {{what}}'
     select:
         all: 'Select all'
     show : 'Show'

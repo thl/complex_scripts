@@ -98,6 +98,18 @@ module ComplexScripts
         end
       end
       
+      def is_tibetan_letter?
+        self.mb_chars.ord.is_tibetan_letter?
+      end
+      
+      def is_tibetan_digit?
+        self.mb_chars.ord.is_tibetan_digit?
+      end
+      
+      def syllable_counts
+        syllable_positions.size
+      end
+            
       def translate(options = {})
         I18n.translate(self, options)
       end
@@ -115,6 +127,24 @@ module ComplexScripts
       
       def capitalize_first_letter
         self.blank? ? self : self[0..0].upcase + self[1...self.size]
+      end
+      
+      private
+      
+      def syllable_positions
+        codes = self.mb_chars.unpack("U*")
+        positions = Array.new
+        original_size = codes.size
+        code = codes.shift
+        while code
+          code = codes.shift while code && !code.is_tibetan_alphanumeric?
+          break unless code
+          start_pos = original_size - codes.size - 1
+          code = codes.shift while code && code.is_tibetan_alphanumeric?
+          end_pos = original_size - codes.size - 2
+          positions << [start_pos, end_pos]
+        end
+        positions
       end
     end
   end

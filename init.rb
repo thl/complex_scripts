@@ -2,6 +2,7 @@
 require 'complex_scripts'
 require 'locale_setup'
 require 'extensions/string_ext'
+require 'extensions/fixnum_ext'
 require 'extensions/ext_hooks'
 require 'patches/xml_builder_patch'
 require 'patches/i18n_patch'
