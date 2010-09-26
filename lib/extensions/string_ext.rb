@@ -57,11 +57,11 @@ module ComplexScripts
       alias :e :encode
       
       def base_letter(lang_code = nil)
-        letter = self.lstrip.mb_chars
-        return nil if letter.blank?
+        word  = self.lstrip.mb_chars
+        return nil if word.blank?
         case lang_code
         when 'jee', 'wme', 'san'
-          letter = letter.to(3)
+          letter = word.to(3)
           letter = letter.gsub(/-|=|_|\?|\/|\^|\342\211\241|\302\271|\302\262|\050/,'').lstrip.downcase # get rid of garbage that may precede head term
           return nil if letter.empty?
           return letter.to_s if letter.size==1
@@ -93,11 +93,49 @@ module ComplexScripts
           else
             return letter.to_s
           end
+        when 'bod' # only works with wylie
+          word = word.downcase
+          i = 0
+          until word[i].ord.is_vowel?
+            i+=1
+            return nil if i>=word.size
+          end
+          return '' if i==0
+          i-=1
+  	    	i-=1 if word[i]=='-'
+  	    	i-=1 if (i>0 && word[i]=='w')
+  	    	# check to see if it is a subscript (y, r, l, w)
+  	    	if i>0
+  	    	  case word[i]
+	    	    when 'r', 'l' then i-=1
+	    	    when 'y'
+	    	      case word[i-1]
+    	        when '.' then return 'y'
+  	          when 'n' then return 'ny'
+	            else i-=1
+    	        end
+    	      end
+  	      end
+  	      i-=1 if word[i]=='+'
+  	      return word[i].to_s if i==0
+  	      case word[i]
+	        when 'h'
+	          case word[i-1]
+            when 'k', 'c', 't', 'p', 'z' then return word[i-1..i].to_s
+            when '+' then return word[i-2].to_s
+            when 's' then return i-2>=0 && word[i-2]=='t' ? 'tsh' : 'sh'
+            else return 'h'
+            end
+          when 's' then return word[i-1]=='t' ? 'ts' : 's'
+          when 'g' then return word[i-1]=='n' ? 'ng' : 'g'
+          when 'z' then return word[i-1]=='d' ? 'dz' : 'z'
+          end
+          return word[i].to_s
         else
-          return letter.at(0).to_s
+          return word[0].to_s
         end
       end
-      
+            
       def is_tibetan_letter?
         self.mb_chars.ord.is_tibetan_letter?
       end
