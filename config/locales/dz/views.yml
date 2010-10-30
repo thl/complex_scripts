@@ -118,7 +118,9 @@ dz:
     tibetan:
         script: 'བོད་ཡིག'
         transliteration: 'Tibetan transliteration'
-    this: 'འདི་'
+    this:
+        record: '{{what}} འདི་'
+        this: 'འདི་'
     translat:
         e: 'སྐད་བསྒྱུར།'
         ion: 'སྐད་བསྒྱུར།'

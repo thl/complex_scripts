@@ -118,7 +118,9 @@ en:
     tibetan:
         script: 'Tibetan script'
         transliteration: 'Tibetan transliteration'
-    this: 'this'
+    this:
+        record: 'this {{what}}'
+        this: 'this'
     translat:
         e: 'Translate'
         ion: 'translation'
