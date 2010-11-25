@@ -100,10 +100,6 @@ en:
         none: 'No results found!'
         previous: 'Previous'
     save: 'Save {{what}}'
-    settings: 'Settings'
-    sign:
-        in: 'Sign in'
-        out: 'sign out'
     search: 
         full_text: 'Full-text'
         record: '{{what}} Search'
@@ -114,6 +110,10 @@ en:
         record: 'See {{what}}'
     select:
         all: 'Select all'
+    settings: 'Settings'
+    sign:
+        in: 'Sign in'
+        out: 'sign out'
     show : 'Show'
     tibetan:
         script: 'Tibetan script'
@@ -129,6 +129,5 @@ en:
         d: 'Last updated {{when}}'
     url_for_reference: 'URL for reference'
     what_is: 'what is {{what}}?'
-    
     date:
       order: [ :day, :month, :year ]

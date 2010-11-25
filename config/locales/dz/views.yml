@@ -100,20 +100,20 @@ dz:
         none: 'No results found!'
         previous: 'ཧེ་མམ།'
     save: '{{what}} སྲུངས།'
-    settings: 'སྒྲིག་སྟངས།'
-    see:
-        record: 'See {{what}}'
-    sign:
-        in: 'ནང་བསྐྱོད།'
-        out: 'ཕྱིར་བསྐྱོད།'
     search: 
         full_text: 'ཚིག་ཡིག་ཆ་ཚང་།'
         record: '{{what}} འཚོལ་ཞིབ།'
         results: 'ཞིབ་འཚོལ་ གྲུབ་འབྲས།'
         this: 'འཚོལ་ཞིབ།'
         tips: 'འཚོལ་ཐངས།'
+    see:
+        record: 'See {{what}}'
     select:
         all: 'ཆ་མཉམ་སེལ་འཐུ་འབད།'
+    settings: 'སྒྲིག་སྟངས།'
+    sign:
+        in: 'ནང་བསྐྱོད།'
+        out: 'ཕྱིར་བསྐྱོད།'
     show : 'སྟོན།'
     tibetan:
         script: 'བོད་ཡིག'
@@ -129,6 +129,5 @@ dz:
         d: 'Last updated {{when}}'
     url_for_reference: 'ཁུངས་གཏུགས་ཡུ་ཨར་ཨེལ།'
     what_is: '{{what}} ག་ཅི་སྨོ?'
-    
     date:
       order: [ :day, :month, :year ]
