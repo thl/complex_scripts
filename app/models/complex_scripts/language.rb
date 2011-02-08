@@ -37,6 +37,10 @@ class ComplexScripts::Language < ActiveRecord::Base
     end
     languages_hash.freeze    
   end
+  
+  def label
+    self.code.blank? ? self.title : self.code
+  end
       
   def letters
     Letter.find_by_sql(['SELECT DISTINCT letters.* FROM letters, words WHERE words.letter_id = letters.id AND words.language_id = ? ORDER BY letters.`order`', id])
