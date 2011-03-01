@@ -114,6 +114,10 @@ en:
         out: 'sign out'
     select:
         all: 'Select all'
+    settings: 'Settings'
+    sign:
+        in: 'Sign in'
+        out: 'sign out'
     show : 'Show'
     tibetan:
         script: 'Tibetan script'
@@ -129,6 +133,5 @@ en:
         d: 'Last updated {{when}}'
     url_for_reference: 'URL for reference'
     what_is: 'what is {{what}}?'
-    
     date:
       order: [ :day, :month, :year ]

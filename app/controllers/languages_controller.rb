@@ -6,7 +6,7 @@ class LanguagesController < AclController
 
     respond_to do |format|
       format.html # index.rhtml
-      format.xml  { render :xml => @languages.to_xml }
+      format.xml { render :xml => @languages.to_xml }
     end
   end
 
@@ -17,7 +17,7 @@ class LanguagesController < AclController
 
     respond_to do |format|
       format.html # show.rhtml
-      format.xml  { render :xml => @language.to_xml }
+      format.xml { render :xml => @language.to_xml }
     end
   end
 
