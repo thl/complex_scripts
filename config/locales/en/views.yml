@@ -100,10 +100,6 @@ en:
         none: 'No results found!'
         previous: 'Previous'
     save: 'Save {{what}}'
-    settings: 'Settings'
-    sign:
-        in: 'Sign in'
-        out: 'sign out'
     search: 
         full_text: 'Full-text'
         record: '{{what}} Search'
@@ -112,6 +108,10 @@ en:
         tips: 'search tips'
     see:
         record: 'See {{what}}'
+    settings: 'Settings'
+    sign:
+        in: 'Sign in'
+        out: 'sign out'
     select:
         all: 'Select all'
     show : 'Show'
