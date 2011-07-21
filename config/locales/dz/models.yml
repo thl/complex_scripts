@@ -1,18 +1,17 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+# Localization file for Dzongkha of complex scripts.
 dz:
     activerecord:
         # Model names will be kept in lower case. Invoke .capitalize or .titleize if you need them in uppercase.
         models:
-            complex_scripts/language: 'སྐད་ཡིག་'
-                # one
-                # other
-        # Attribute names will be titleized.
+            complex_scripts/language:
+                one: 'སྐད་ཡིག'
+                other: 'སྐད་ཡིག་ཚུ།'
+        # Attribute names will be titleized.:
         attributes:
             complex_scripts/language:
-                code: 'Code (ISO 369-3)'
-                locale: 'Locale'
-                title: 'Language Name'
-                unicode_codepoint_end: 'Unicode Codepoint End'
-                unicode_codepoint_start: 'Unicode Codepoint Start'
-                use_for_interface: 'Use for Interface'
+                code: 'ཨང་རྟགས་ (ཨའི་ཨེསི་ཨོ་ ༣༦༩-༣)'
+                locale: 'ལོ་ཀེལ།'
+                title: 'སྐད་ཡིག་མིང་།'
+                unicode_codepoint_end: 'ཡུ་ནི་ཀོཌི་ ཀོཌི་པེ་ཡིནཊི་ མཇུག་བསྡུ།'
+                unicode_codepoint_start: 'ཡུ་ནི་ཀོཌི་ ཀོཌི་པེ་ཡིནཊི་ འགོ་བཙུགས།'
+                use_for_interface: 'ངོས་འདྲ་བའི་དོན་ལས་ལག་ལེན་འཐབ།'

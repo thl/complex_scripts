@@ -1,5 +1,4 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+# Localization file for English of complex scripts.
 en:
     according_to: 'According to {{whom}}'
     add:
@@ -45,7 +44,6 @@ en:
         confirmation: 'Are you sure?'
         successful: '{{what}} deleted succesfully.'
         this: 'Delete'
-    dzongkha: 'Dzongkha'
     edit:
         ing:
             record: 'Editing {{what}}'
@@ -54,7 +52,6 @@ en:
         record: 'Edit {{what}}'
         this: 'Edit'
         successful: '{{what}} was successfully updated.'
-    english: 'English'
     execute: 'Execute'
     for: '{{what}} for {{whom}}'
     found: 'Found {{what}}'
@@ -65,6 +62,11 @@ en:
         for: '{{what}} Home'
     id: '{{what}} ID'
     in: '{{what}} in {{where}}'
+    language:
+        chinese: 'Chinese'
+        dzongkha: 'Dzongkha'
+        english: 'English'
+        tibetan: 'Tibetan'
     list:
         ing:
             in: 'Listing {{what}} in {{where}}'
@@ -93,14 +95,14 @@ en:
     none: 'None'
     options: 'Options'
     or: 'or'
-    parent: 
+    parent:
         of: 'Parent {{who}}'
     results:
         next: 'Next'
         none: 'No results found!'
         previous: 'Previous'
     save: 'Save {{what}}'
-    search: 
+    search:
         full_text: 'Full-text'
         record: '{{what}} Search'
         results: 'Search Results'
@@ -114,11 +116,7 @@ en:
         out: 'sign out'
     select:
         all: 'Select all'
-    settings: 'Settings'
-    sign:
-        in: 'Sign in'
-        out: 'sign out'
-    show : 'Show'
+    show: 'Show'
     tibetan:
         script: 'Tibetan script'
         transliteration: 'Tibetan transliteration'
@@ -134,4 +132,4 @@ en:
     url_for_reference: 'URL for reference'
     what_is: 'what is {{what}}?'
     date:
-      order: [ :day, :month, :year ]
+        order: '[ :day, :month, :year ]'

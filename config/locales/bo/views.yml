@@ -1,0 +1,135 @@
+# Localization file for Tibetan of complex scripts.
+bo:
+    according_to: '{{whom}}གཞི་བྱས།'
+    add:
+        record: '{{what}}སྣོན་པ།'
+        this: 'ཁ་སྣོན།'
+    advanced: 'མཐོ་རིམ་གྱི་'
+    affirmation: 'ཡིན།'
+    all: '{{what}}ཐམས་ཅད།'
+    another: '{{what}}གཞན་ཞིག'
+    application: 'ཉེར་སྤྱོད་བྱ་རིམ།'
+    associate:
+        d: 'འབྲེལ་ལྡན་གྱི་{{what}}'
+        ion: '{{what}}འབྲལ་ལྡན།'
+        record: '{{what}}དང་{{whom}}དབར་གྱི་འབྲེལ་ལྡན།'
+        to: '{{what}}དང་འབྲེལ་ལྡན།'
+    available: 'ཐོབ་ནུས་པའི{{what}}'
+    back:
+        this: 'ཕྱིར་ལོག'
+        to: '{{what}}རུ་ཕྱིར་ལོག་པ།'
+        to_in: '{{where}}རུ་ཕྱིར་ལོག་ནས་{{what}}གྱུར་པ།'
+    browse:
+        by: '{{what}} {{whom}}མིག་བཤར།'
+        records: '{{what}}མིག་བཤར།'
+        this: 'མིག་བཤར།'
+    cancel:
+        record: '{{what}}འདོར་བ།'
+        this: 'འདོར་བ།'
+    changes: 'བཟོ་བཅོས།'
+    configure: 'སྡེབ་སྒྲིག'
+    copyright:
+        message:
+            provider: '{{what}}འདི་{{whom}}ཡི་མཁོ་སྤྲོད་བྱས།'
+            holder:
+                one: 'པར་དབང་མཛིན་མཁན་ནི{{whom}}'
+                other: 'པར་དབང་མཛིན་མཁན་ནི{{whom}}'
+    count:
+        one: '1{{what}} '
+        other: '{{count}} {{what}}'
+    create:
+        record: '{{what}}གསར་བཟོ།'
+        this: 'གསར་བཟོ།'
+    delete:
+        confirmation: 'སྐུ་ཉིད་ཀྱི་ཁག་ཐག་བྱེད་དམ།'
+        successful: '{{what}སུབ་པ་ལིགས་འགྲུབ།'
+        this: 'སུབ་པ།'
+    edit:
+        ing:
+            record: '{{what}}རྩོམ་སྒྲིག'
+            this: 'རྩོམ་སྒྲིག'
+        failure: 'ནོར་འཁྲུལ་གསར་སྒྱུར{{what}}'
+        record: '{{what}}རྩོམ་སྒྲིག'
+        this: 'རྩོམ་སྒྲིག'
+        successful: '{{what}}གསར་སྒྱུར་ལེགས་འགྲུབ་བྱུང་།'
+    execute: 'ལག་བསྟར།'
+    for: '{{whom}}ཡི་{{what}}'
+    found: '{{what}}མཐོང་བ།'
+    get: '{{what}}  ཐོབ་པ།'
+    go: 'སོང་།'
+    home:
+        this: 'ལྡེབ་ངོས་གཙོ་བོ་།     གཙོ་ངོས།'
+        for: '{{what}}ཡི་ལྡེབ་ངོས་གཙོ་བོ།'
+    id: ' {{what}}'
+    in: '{{where}}རུགནས་པ་ཡི{{what}}'
+    language:
+        chinese: 'Chinese'
+        dzongkha: 'ཙོང་ཁའི་སྐད་བརྡ།'
+        english: 'དབྱིན་ཡིག'
+        tibetan: 'བོད་སྐད།'
+    list:
+        ing:
+            in: '{{where}}རུ་{{what}}བཀྲམ་པ།'
+            records: '{{what}}བཀྲམ་པ།'
+    manage:
+        ment: '{{what}}ཡི་དོ་དམ།'
+        record: '{{what}}དོ་དམ་བྱེད་པ།'
+        this: 'དོ་དམ།'
+    master: '{{what}}ཚོད་འཛིན།'
+    material: 'དཔྱད་ཡིག'
+    media:
+        none: 'སྨྱན་གཟུགས་ཡིག་ཆ་མ་མཐོང་།'
+    member: 'ཚོགས་མི།'
+    more:
+        this: 'དེ་ལས་ཀྱང་མང་།'
+    name:
+        for: '{{what}}མིང་།'
+        in: 'མིང་{{what}}'
+    negation: 'མིན།'
+    new:
+        major: '{{what}}བརྗོད་བྱ་གསར་བ།'
+        record: '{{what}}གསར་བ།'
+        successful: '{{what}}གསར་བཟོ་ལེགས་འགྲུབ།'
+        this: 'གསར་བ།'
+        under: '{{where}}འོག་གི་{{what}}གསར་བ།'
+    none: 'མེད།'
+    options: 'གདམ་གསེས།'
+    or: 'ཡང་ན།'
+    parent:
+        of: 'ཕ་ཚབ་{{who}}'
+    results:
+        next: 'རྗེས་མ།'
+        none: 'འཚོལ་བའི་མཇུག་འབྲས་མ་རྙེད།'
+        previous: 'སྔོན་མ།'
+    save: '{{what}}ཉར་ཚགས།'
+    search:
+        full_text: 'རྩོམ་ཡིག་ཧྲིལ་པོ།'
+        record: '{{what}}བཤེར་འཚོལ།'
+        results: 'བཙལ་འབྲས།'
+        this: 'བཤེར་འཚོལ།'
+        tips: 'བཤེར་འཚོལ་སྣེ་སྟོན།'
+    see:
+        record: '{{what}}ལས་གསལ།'
+    settings: 'སྒྲིག་འགོད།'
+    sign:
+        in: 'ནང་འཇུག'
+        out: 'ཕྱིར་ཐོན།'
+    select:
+        all: 'ཀུན་འདེམས།'
+    show: 'འཆར་བ།'
+    tibetan:
+        script: 'བོད་ཡིག་གི་ཡིག་གཟུགས།'
+        transliteration: 'བོད་ཡིག་འགྱུར་འབྲི།'
+    this:
+        record: '{{what}}འདི།'
+        this: 'འདི།'
+    translat:
+        e: 'ཡིག་བསྒྱུར།'
+        ion: 'བསྒྱུར་རྩོམ།'
+    update:
+        this: 'གསར་སྒྱུར།'
+        d: '{{when}}མཐའ་མཇུག་གསར་སྒྱུར།'
+    url_for_reference: 'དཔྱད་གཞི་URLཡི་གནས།'
+    what_is: '{{what}}ནི ་ཅི།'
+    date:
+        order: '[ :ཉིན, :ཟླ, :ལོ ]'

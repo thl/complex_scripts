@@ -1,5 +1,5 @@
 # ComplexScripts
-LANGUAGES = {:en => {:locale => 'eng-US', :title => :english}, :ne => {:locale => 'nep-NP', :title => :nepali, :unicode_range => [2304, 2431]}, :bo => {:title => :tibetan, :locale => 'bod-CN', :unicode_range => [3840, 4095]}, :dz => {:locale => 'dzo-BT', :title => :dzongkha}}
+LANGUAGES = {:en => {:locale => 'eng-US', :title => 'language.english'}, :ne => {:locale => 'nep-NP', :title => 'language.nepali', :unicode_range => [2304, 2431]}, :bo => {:title => 'language.tibetan', :locale => 'bod-CN', :unicode_range => [3840, 4095]}, :dz => {:locale => 'dzo-BT', :title => 'language.dzongkha'}, :zh => {:locale => 'zho-CN', :title => 'language.chinese'}}
 UNICODE_RANGES = Array.new
 LANGUAGES.each do |key, value|
   range =  value[:unicode_range]

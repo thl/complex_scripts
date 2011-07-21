@@ -1,19 +1,18 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+# Localization file for Dzongkha of complex scripts.
 dz:
-    according_to: 'According to {{whom}}'
+    according_to: '{{whom}} དང་འཁྲིལཝ་ད་'
     add:
         record: '{{what}} ཁ་སྐོང་རྐྱབས།'
         this: 'ཁ་སྐོང་རྐྱབས།'
-    advanced: 'མཐོ་རིམ་ཅན་།'
-    affirmation: 'ཨིན'
+    advanced: 'མཐོ་རིམ་ཅན།'
+    affirmation: 'ཨིན།'
     all: '{{what}} ཆ་མཉམ།'
-    another: '{{what}} སོ་སོ་'
-    application: 'ལག་ལེན་'
+    another: '{{what}} སོར་སོ།'
+    application: 'ལག་ལེན།'
     associate:
         d: 'འབྲེལ་བ་ཡོད་པའི་ {{what}}'
         ion: '{{what}} ལུ་འབྲེལ་བ།'
-        record: 'Associate {{what}} to {{whom}}'
+        record: '{{what}} འདི་ {{whom}}ལུ་ མཉམ་སྦྲགས་འབད།'
         to: '{{what}} ལུ་མཉམ་སྦྲགས་འབད།'
     available: 'ཡོད་པའི་ {{what}}།'
     back:
@@ -27,107 +26,110 @@ dz:
     cancel:
         record: '{{what}} ཆ་མེད་གཏང་།'
         this: 'ཆ་མེད་གཏང་།'
-    changes: 'བསྒྱུར་བཅོས་ཚུ་'
-    configure: 'རིམ་སྒྲིག་འབད་'
+    changes: 'བསྒྱུར་བཅོས་ཚུ།'
+    configure: 'རིམ་སྒྲིག་འབད།'
     copyright:
         message:
             provider: '{{what}} འདི་ {{whom}} གིས་བྱིན་ཡོདཔ།'
-            holder: 'འདྲ་བཤུས་དབང་ཆ་ འཆང་མི་ {{whom}}།'
-            # one
-            # other
+            holder:
+                one: 'འདྲ་བཤུས་དབང་ཆ་ འཆང་མི་ {{whom}}།'
+                other: 'འདྲ་བཤུས་དབང་ཆ་ འཆང་མི་ {{whom}}།'
     count:
-        one: '{{what}} 1'
+        one: '{{what}} ༡'
         other: '{{what}} {{count}}'
     create:
         record: '{{what}} གསར་བསྐྲུན་འབད།'
         this: 'གསར་བསྐྲུན་འབད།'
     delete:
         confirmation: 'ངེས་བདེན་ཨིན་ན་?'
-        successful: '{{what}} མཐར་འཁྱོལ་ཅན་སྦེ་བཏོན་གཏང་ཡོདཔ།'
+        successful: '{{what}} མཐར་འཁྱོལ་ཅན་སྦེ་བཏོན་བཏང་ཡོདཔ།'
         this: 'བཏོན་གཏང་།'
-    dzongkha: 'རྫོང་ཁ།'
     edit:
         ing:
-            record: '{{what}} ཞུན་དག་འབད་ནི།'
-            this: 'ཞུན་དག་'
-        failure: 'Error updating {{what}}.'
+            record: '{{what}} ཞུན་དག་འབད་དོ།'
+            this: 'ཞུན་དག་འབད་དོ།'
+        failure: ' {{what}} ཞུན་དག་འབད་བའི་སྐབས་ལུ་འཛོལ་བ།'
         record: '{{what}} ཞུན་དག'
         this: 'ཞུན་དག'
         successful: '{{what}} མཐར་འཁྱོལ་ཅན་སྦེ་དུས་མཐུན་བཟོ་ཡོདཔ།'
-    english: 'ཨིང་སྐད།'
-    execute: 'Execute'
+    execute: 'ལག་ལེན་འཐབ།'
     for: '{{whom}} དོན་ལུ་ {{what}}'
     found: '{{what}} འཚོལ་ཐོབ་ཅི།'
-    get: '{{what}} ལེན'
+    get: '{{what}} ལེན།'
     go: 'འགྱོ།'
     home:
-        this: 'ཁྱིམ།'
-        for: '{{what}} Home'        
+        this: 'མ་ཤོག'
+        for: '{{what}} མ་ཤོག'
     id: '{{what}} ཨའི་ཌི།'
     in: '{{what}} ནང་གི་ {{where}}'
+    language:
+        chinese: 'Chinese'
+        dzongkha: 'རྫོང་ཁ།'
+        english: 'ཨིང་སྐད།'
+        tibetan: 'ཆོས་སྐད།'
     list:
         ing:
             in: '{{where}} ནང་གི་ {{what}} ཐོ་བཀོད་འབད་ནི།'
             records: '{{what}} ཐོ་བཀོད་འབད་ནི།'
-    manage: 
+    manage:
         ment: '{{what}} འཛིན་སྐྱོང་།'
         record: '{{what}} འཛིན་སྐྱོང་འབད།'
         this: 'འཛིན་སྐྱོང་འཐབ།'
-    master: 'Master {{what}}'
-    material: 'རྒྱུ་ཆ་'
+    master: 'ཨམ་ {{what}}'
+    material: 'རྒྱུ་ཆ།'
     media:
         none: 'བརྒྱུད་ལམ་ འཚོལ་མ་ཐོབ།'
     member: 'འཐུས་མི།'
     more:
-        this: 'རྒྱས་བཤད'
+        this: 'ཁ་གསལ།'
     name:
-        for: '{{what}} མིང་'
+        for: '{{what}} མིང་།'
         in: 'Name ({{what}})'
-    negation: 'མེན'
+    negation: 'མེན།'
     new:
         major: '{{what}} གཙོ་བོ་གསརཔ།'
         record: '{{what}} གསརཔ།'
         successful: '{{what}} མཐར་འཁྱོལ་ཅན་སྦེ་གསར་བསྐྲུན་འབད་ཡོདཔ།'
-        this: 'གསརཔ་'
+        this: 'གསརཔ།'
         under: '{{where}} འོག་ལུ་ {{what}} གསརཔ།'
-    none: 'གཅིག་ཡང་མེནམ།'
+    none: 'ཅི་མེད།'
     options: 'གདམ་ཁ་ཚུ།'
     or: 'ཡང་ན།'
     parent:
         of: '{{who}} འབྱུང་ས།'
     results:
         next: 'ཤུལ་མམ།'
-        none: 'No results found!'
+        none: 'གྲུབ་འབྲས་མིན་འདུག!'
         previous: 'ཧེ་མམ།'
     save: '{{what}} སྲུངས།'
-    search: 
+    search:
         full_text: 'ཚིག་ཡིག་ཆ་ཚང་།'
         record: '{{what}} འཚོལ་ཞིབ།'
-        results: 'ཞིབ་འཚོལ་ གྲུབ་འབྲས།'
+        results: 'ཞིབ་འཚོལ་གྲུབ་འབྲས།'
         this: 'འཚོལ་ཞིབ།'
         tips: 'འཚོལ་ཐངས།'
     see:
-        record: 'See {{what}}'
-    select:
-        all: 'ཆ་མཉམ་སེལ་འཐུ་འབད།'
+        record: 'བལྟ་ {{what}}'
     settings: 'སྒྲིག་སྟངས།'
     sign:
         in: 'ནང་བསྐྱོད།'
         out: 'ཕྱིར་བསྐྱོད།'
-    show : 'སྟོན།'
+    select:
+        all: 'ཆ་མཉམ་སེལ་འཐུ་འབད།'
+    show: 'སྟོན།'
     tibetan:
         script: 'བོད་ཡིག'
-        transliteration: 'Tibetan transliteration'
+        transliteration: 'བོད་ཡིག་ཕབ་བསྒྱུར།'
     this:
-        record: '{{what}} འདི་'
-        this: 'འདི་'
+        record: '{{what}} འདི།'
+        this: 'འདི།'
     translat:
-        e: 'སྐད་བསྒྱུར།'
+        e: 'སྐད་བསྒྱུར་འབད།'
         ion: 'སྐད་བསྒྱུར།'
     update:
-        this: 'དུས་མཐུན་བཟོ་ནི།'
-        d: 'Last updated {{when}}'
+        this: 'དུས་མཐུན།'
+        d: 'དུས་མཐུན་མཇུག་ {{when}}'
     url_for_reference: 'ཁུངས་གཏུགས་ཡུ་ཨར་ཨེལ།'
     what_is: '{{what}} ག་ཅི་སྨོ?'
     date:
-      order: [ :day, :month, :year ]
+        order: '[ :ཉིནམ་ :ཟླཝ་ :ལོ་ ]'

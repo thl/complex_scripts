@@ -1,0 +1,17 @@
+# Localization file for Chinese of complex scripts.
+zh:
+    activerecord:
+        # Model names will be kept in lower case. Invoke .capitalize or .titleize if you need them in uppercase.
+        models:
+            complex_scripts/language:
+                one: '语言'
+                other: '语言(复数)'
+        # Attribute names will be titleized.
+        attributes:
+            complex_scripts/language:
+                code: '编码 (ISO 369-3)'
+                locale: '区域设置'
+                title: '语言名称'
+                unicode_codepoint_end: '国际码码点结束'
+                unicode_codepoint_start: '国际码码点起始'
+                use_for_interface: '界面使用'

@@ -1,0 +1,17 @@
+# Localization file for Tibetan of complex scripts.
+bo:
+    activerecord:
+        # Model names will be kept in lower case. Invoke .capitalize or .titleize if you need them in uppercase.
+        models:
+            complex_scripts/language:
+                one: 'སྐད་བརྡ།'
+                other: 'སྐད་བརྡ་དག'
+        # Attribute names will be titleized.:
+        attributes:
+            complex_scripts/language:
+                code: 'ཨང་སྒྲིག      སྒྲིག་ཨང་།'
+                locale: 'ཁུལ་ཁོངས་སྒྲིག་འགོད།'
+                title: 'སྐད་བརྡའི་མིང་།'
+                unicode_codepoint_end: 'རྒྱལ་སྤྱི་ཨང་ཨང་ཚག་མཇུག་རྫོགས།'
+                unicode_codepoint_start: 'རྒྱལ་སྤྱི་ཨང་ཨང་ཚག་འགོ་འཛུགས།'
+                use_for_interface: 'མཚམས་ངོས་བེད་སྤྱོད།'

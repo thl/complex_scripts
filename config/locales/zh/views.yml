@@ -1,0 +1,135 @@
+# Localization file for Chinese of complex scripts.
+zh:
+    according_to: '根据{{whom}}'
+    add:
+        record: '添加{{what}}'
+        this: '添加'
+    advanced: '高级的'
+    affirmation: '是'
+    all: '全部{{what}}'
+    another: '另一个{{what}}'
+    application: '应用程序'
+    associate:
+        d: '关联的{{what}}'
+        ion: '{{what}}关联 '
+        record: '{{what}}与{{whom}}之间的关联'
+        to: '与{{what}}的关联'
+    available: '可获得的{{what}}'
+    back:
+        this: '返回'
+        to: '返回至{{what}}'
+        to_in: '返回至{{where}}成为{{what}}'
+    browse:
+        by: '浏览{{what}} {{whom}}'
+        records: '浏览{{what}} '
+        this: '浏览'
+    cancel:
+        record: '取消{{what}} '
+        this: '取消'
+    changes: '改动'
+    configure: '配置'
+    copyright:
+        message:
+            provider: '本{{what}} 是由{{whom}}提供'
+            holder:
+                one: '版权所有者为 {{whom}}'
+                other: '版权所有者为 {{whom}}'
+    count:
+        one: '1{{what}} '
+        other: '{{count}} {{what}}'
+    create:
+        record: '创建{{what}}'
+        this: '创建'
+    delete:
+        confirmation: '您确定吗?'
+        successful: ' {{what}}删除成功'
+        this: '删除'
+    edit:
+        ing:
+            record: '编辑{{what}}'
+            this: '编辑'
+        failure: '错误更新{{what}}'
+        record: '编辑{{what}}'
+        this: '编辑'
+        successful: '{{what}}已经成功更新'
+    execute: '执行'
+    for: '{{whom}}的{{what}}'
+    found: '发现{{what}}'
+    get: '获得{{what}}'
+    go: '前往'
+    home:
+        this: '主页'
+        for: '{{what}}的主页'
+    id: ' {{what}}的标示'
+    in: '位于{{where}}的{{what}}'
+    language:
+        chinese: 'Chinese'
+        dzongkha: '宗卡语'
+        english: '英文'
+        tibetan: 'Tibetan'
+    list:
+        ing:
+            in: '在{{where}}列出{{what}}'
+            records: '列出{{what}}'
+    manage:
+        ment: '{{what}}的管理'
+        record: '管理{{what}}'
+        this: '管理'
+    master: '控制{{what}}'
+    material: '资料'
+    media:
+        none: '未发现媒体文件'
+    member: '会员'
+    more:
+        this: '更多'
+    name:
+        for: '{{what}}名称'
+        in: '名称{{what}}'
+    negation: '否'
+    new:
+        major: '新主题{{what}}'
+        record: '新{{what}}'
+        successful: '成功创建{{what}}'
+        this: '新'
+        under: '{{where}}底下的新{{what}}'
+    none: '无'
+    options: '选择'
+    or: '或者'
+    parent:
+        of: '父代{{who}}'
+    results:
+        next: '下一个'
+        none: '没有找到结果!'
+        previous: '前一个'
+    save: '保存{{what}}'
+    search:
+        full_text: '全文'
+        record: '{{what}}搜索'
+        results: '搜索结果'
+        this: '搜索'
+        tips: '搜索提示'
+    see:
+        record: '参见{{what}}'
+    settings: '设置'
+    sign:
+        in: '登入'
+        out: '登出'
+    select:
+        all: '全选'
+    show: '显示'
+    tibetan:
+        script: '藏文字体'
+        transliteration: '藏文转写'
+    this:
+        record: '这个{{what}}'
+        this: '这个'
+    translat:
+        e: '翻译'
+        ion: '译文'
+    update:
+        this: '更新'
+        d: '最后更新{{when}}'
+    url_for_reference: '参考URL地址'
+    what_is: '{{what}}是什么?'
+    date:
+        order: '[ :天, :月, :年 ]'
