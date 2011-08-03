@@ -132,4 +132,4 @@ dz:
     url_for_reference: 'ཁུངས་གཏུགས་ཡུ་ཨར་ཨེལ།'
     what_is: '{{what}} ག་ཅི་སྨོ?'
     date:
-        order: '[ :ཉིནམ་ :ཟླཝ་ :ལོ་ ]'
+        order: [ :day, :month, :year ]

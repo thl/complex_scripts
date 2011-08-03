@@ -132,4 +132,4 @@ bo:
     url_for_reference: 'དཔྱད་གཞི་URLཡི་གནས།'
     what_is: '{{what}}ནི ་ཅི།'
     date:
-        order: '[ :ཉིན, :ཟླ, :ལོ ]'
+        order: [ :day, :month, :year ]
