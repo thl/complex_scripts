@@ -63,7 +63,7 @@ zh:
     id: ' {{what}}的标示'
     in: '位于{{where}}的{{what}}'
     language:
-        chinese: 'Chinese'
+        chinese: '中文'
         dzongkha: '宗卡语'
         english: '英文'
         tibetan: 'Tibetan'
