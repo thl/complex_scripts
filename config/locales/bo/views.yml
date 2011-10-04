@@ -14,6 +14,7 @@ bo:
         ion: '{{what}}འབྲལ་ལྡན།'
         record: '{{what}}དང་{{whom}}དབར་གྱི་འབྲེལ་ལྡན།'
         to: '{{what}}དང་འབྲེལ་ལྡན།'
+    author: 'author'
     available: 'ཐོབ་ནུས་པའི{{what}}'
     back:
         this: 'ཕྱིར་ལོག'
@@ -38,6 +39,7 @@ bo:
         one: '1{{what}} '
         other: '{{count}} {{what}}'
     create:
+        d: 'Created at'
         record: '{{what}}གསར་བཟོ།'
         this: 'གསར་བཟོ།'
     delete:
@@ -94,7 +96,9 @@ bo:
         under: '{{where}}འོག་གི་{{what}}གསར་བ།'
     none: 'མེད།'
     options: 'གདམ་གསེས།'
-    or: 'ཡང་ན།'
+    or:
+        record: 'or {{what}}'
+        this: 'ཡང་ན།'
     parent:
         of: 'ཕ་ཚབ་{{who}}'
     results:
@@ -128,7 +132,9 @@ bo:
         ion: 'བསྒྱུར་རྩོམ།'
     update:
         this: 'གསར་སྒྱུར།'
-        d: '{{when}}མཐའ་མཇུག་གསར་སྒྱུར།'
+        d:
+            record: '{{when}}མཐའ་མཇུག་གསར་སྒྱུར།'
+            this: 'Updated at'
     url_for_reference: 'དཔྱད་གཞི་URLཡི་གནས།'
     what_is: '{{what}}ནི ་ཅི།'
     date:

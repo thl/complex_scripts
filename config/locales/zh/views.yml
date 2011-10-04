@@ -14,6 +14,7 @@ zh:
         ion: '{{what}}关联 '
         record: '{{what}}与{{whom}}之间的关联'
         to: '与{{what}}的关联'
+    author: 'author'
     available: '可获得的{{what}}'
     back:
         this: '返回'
@@ -38,6 +39,7 @@ zh:
         one: '1{{what}} '
         other: '{{count}} {{what}}'
     create:
+        d: 'Created at'
         record: '创建{{what}}'
         this: '创建'
     delete:
@@ -94,7 +96,9 @@ zh:
         under: '{{where}}底下的新{{what}}'
     none: '无'
     options: '选择'
-    or: '或者'
+    or:
+        record: 'or {{what}}'
+        this: '或者'
     parent:
         of: '父代{{who}}'
     results:
@@ -128,7 +132,9 @@ zh:
         ion: '译文'
     update:
         this: '更新'
-        d: '最后更新{{when}}'
+        d:
+            record: '最后更新{{when}}'
+            this: 'Updated at'
     url_for_reference: '参考URL地址'
     what_is: '{{what}}是什么?'
     date:
