@@ -16,7 +16,7 @@ en:
         ion: '{{what}} Association'
         record: 'Associate {{what}} to {{whom}}'
         to: 'Associate to {{what}}'
-    author: 
+    author:
         one: 'author'
         other: 'authors'
     available: 'Available {{what}}'
