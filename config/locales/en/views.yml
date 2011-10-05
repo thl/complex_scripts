@@ -6,7 +6,9 @@ en:
         this: 'Add'
     advanced: 'Advanced'
     affirmation: 'Yes'
-    all: 'all {{what}}'
+    all:
+        records: 'all {{what}}'
+        this: 'all'
     another: 'another {{what}}'
     application: 'Application'
     associate:
@@ -14,7 +16,9 @@ en:
         ion: '{{what}} Association'
         record: 'Associate {{what}} to {{whom}}'
         to: 'Associate to {{what}}'
-    author: 'author'
+    author: 
+        one: 'author'
+        other: 'authors'
     available: 'Available {{what}}'
     back:
         this: 'Back'
@@ -139,3 +143,6 @@ en:
     what_is: 'what is {{what}}?'
     date:
         order: [ :day, :month, :year ]
+        this:
+            one: 'date'
+        	other: 'dates'

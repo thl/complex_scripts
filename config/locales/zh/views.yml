@@ -6,7 +6,9 @@ zh:
         this: '添加'
     advanced: '高级的'
     affirmation: '是'
-    all: '全部{{what}}'
+    all:
+        records: '全部{{what}}'
+        this: 'all'
     another: '另一个{{what}}'
     application: '应用程序'
     associate:
@@ -139,3 +141,6 @@ zh:
     what_is: '{{what}}是什么?'
     date:
         order: [ :day, :month, :year ]
+        this:
+            one: 'date'
+        	other: 'dates'

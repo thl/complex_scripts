@@ -6,7 +6,9 @@ dz:
         this: 'ཁ་སྐོང་རྐྱབས།'
     advanced: 'མཐོ་རིམ་ཅན།'
     affirmation: 'ཨིན།'
-    all: '{{what}} ཆ་མཉམ།'
+    all:
+        records: '{{what}} ཆ་མཉམ།'
+        this: 'all'
     another: '{{what}} སོར་སོ།'
     application: 'ལག་ལེན།'
     associate:
@@ -139,3 +141,6 @@ dz:
     what_is: '{{what}} ག་ཅི་སྨོ?'
     date:
         order: [ :day, :month, :year ]
+        this:
+            one: 'date'
+        	other: 'dates'
