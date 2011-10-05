@@ -8,7 +8,7 @@ dz:
     affirmation: 'ཨིན།'
     all:
         records: '{{what}} ཆ་མཉམ།'
-        this: 'all'
+        these: 'all'
     another: '{{what}} སོར་སོ།'
     application: 'ལག་ལེན།'
     associate:

@@ -8,7 +8,7 @@ zh:
     affirmation: '是'
     all:
         records: '全部{{what}}'
-        this: 'all'
+        these: 'all'
     another: '另一个{{what}}'
     application: '应用程序'
     associate:

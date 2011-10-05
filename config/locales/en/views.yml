@@ -8,7 +8,7 @@ en:
     affirmation: 'Yes'
     all:
         records: 'all {{what}}'
-        this: 'all'
+        these: 'all'
     another: 'another {{what}}'
     application: 'Application'
     associate:
