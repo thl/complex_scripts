@@ -16,7 +16,9 @@ zh:
         ion: '{{what}}关联 '
         record: '{{what}}与{{whom}}之间的关联'
         to: '与{{what}}的关联'
-    author: 'author'
+    author:
+        one: 'author'
+        other: 'authors'
     available: '可获得的{{what}}'
     back:
         this: '返回'
@@ -40,10 +42,12 @@ zh:
     count:
         one: '1{{what}} '
         other: '{{count}} {{what}}'
-    create:
-        d: 'Created at'
-        record: '创建{{what}}'
-        this: '创建'
+    creat:
+        e:
+            d: 'Created at'
+            record: '创建{{what}}'
+            this: '创建'
+        ing: 'Creating {{what}}'
     delete:
         confirmation: '您确定吗?'
         successful: ' {{what}}删除成功'
@@ -116,6 +120,7 @@ zh:
         tips: '搜索提示'
     see:
         record: '参见{{what}}'
+    set: 'Set {{what}}'
     settings: '设置'
     sign:
         in: '登入'

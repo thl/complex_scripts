@@ -16,7 +16,9 @@ dz:
         ion: '{{what}} ལུ་འབྲེལ་བ།'
         record: '{{what}} འདི་ {{whom}}ལུ་ མཉམ་སྦྲགས་འབད།'
         to: '{{what}} ལུ་མཉམ་སྦྲགས་འབད།'
-    author: 'author'
+    author:
+        one: 'author'
+        other: 'authors'
     available: 'ཡོད་པའི་ {{what}}།'
     back:
         this: 'རྒྱབ།'
@@ -40,10 +42,12 @@ dz:
     count:
         one: '{{what}} ༡'
         other: '{{what}} {{count}}'
-    create:
-        d: 'Created at'
-        record: '{{what}} གསར་བསྐྲུན་འབད།'
-        this: 'གསར་བསྐྲུན་འབད།'
+    creat:
+        e:
+            d: 'Created at'
+            record: '{{what}} གསར་བསྐྲུན་འབད།'
+            this: 'གསར་བསྐྲུན་འབད།'
+        ing: 'Creating {{what}}'
     delete:
         confirmation: 'ངེས་བདེན་ཨིན་ན་?'
         successful: '{{what}} མཐར་འཁྱོལ་ཅན་སྦེ་བཏོན་བཏང་ཡོདཔ།'
@@ -116,6 +120,7 @@ dz:
         tips: 'འཚོལ་ཐངས།'
     see:
         record: 'བལྟ་ {{what}}'
+    set: 'Set {{what}}'
     settings: 'སྒྲིག་སྟངས།'
     sign:
         in: 'ནང་བསྐྱོད།'

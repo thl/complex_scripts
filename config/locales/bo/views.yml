@@ -16,7 +16,9 @@ bo:
         ion: '{{what}}འབྲལ་ལྡན།'
         record: '{{what}}དང་{{whom}}དབར་གྱི་འབྲེལ་ལྡན།'
         to: '{{what}}དང་འབྲེལ་ལྡན།'
-    author: 'author'
+    author:
+        one: 'author'
+        other: 'authors'
     available: 'ཐོབ་ནུས་པའི{{what}}'
     back:
         this: 'ཕྱིར་ལོག'
@@ -40,10 +42,12 @@ bo:
     count:
         one: '1{{what}} '
         other: '{{count}} {{what}}'
-    create:
-        d: 'Created at'
-        record: '{{what}}གསར་བཟོ།'
-        this: 'གསར་བཟོ།'
+    creat:
+        e:
+            d: 'Created at'
+            record: '{{what}}གསར་བཟོ།'
+            this: 'གསར་བཟོ།'
+        ing: 'Creating {{what}}'
     delete:
         confirmation: 'སྐུ་ཉིད་ཀྱི་ཁག་ཐག་བྱེད་དམ།'
         successful: '{{what}སུབ་པ་ལིགས་འགྲུབ།'
@@ -116,6 +120,7 @@ bo:
         tips: 'བཤེར་འཚོལ་སྣེ་སྟོན།'
     see:
         record: '{{what}}ལས་གསལ།'
+    set: 'Set {{what}}'
     settings: 'སྒྲིག་འགོད།'
     sign:
         in: 'ནང་འཇུག'

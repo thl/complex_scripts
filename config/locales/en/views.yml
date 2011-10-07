@@ -42,10 +42,12 @@ en:
     count:
         one: '1 {{what}}'
         other: '{{count}} {{what}}'
-    create:
-        d: 'Created at'
-        record: 'Create {{what}}'
-        this: 'Create'
+    creat:
+        e:
+            d: 'Created at'
+            record: 'Create {{what}}'
+            this: 'Create'
+        ing: 'Creating {{what}}'
     delete:
         confirmation: 'Are you sure?'
         successful: '{{what}} deleted succesfully.'
