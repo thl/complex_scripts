@@ -127,6 +127,7 @@ zh:
         out: '登出'
     select:
         all: '全选'
+        this: 'Select'
     show: '显示'
     tibetan:
         script: '藏文字体'

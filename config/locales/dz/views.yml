@@ -127,6 +127,7 @@ dz:
         out: 'ཕྱིར་བསྐྱོད།'
     select:
         all: 'ཆ་མཉམ་སེལ་འཐུ་འབད།'
+        this: 'Select'
     show: 'སྟོན།'
     tibetan:
         script: 'བོད་ཡིག'

@@ -127,6 +127,7 @@ bo:
         out: 'ཕྱིར་ཐོན།'
     select:
         all: 'ཀུན་འདེམས།'
+        this: 'Select'
     show: 'འཆར་བ།'
     tibetan:
         script: 'བོད་ཡིག་གི་ཡིག་གཟུགས།'

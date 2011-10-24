@@ -145,6 +145,6 @@ en:
     what_is: 'what is {{what}}?'
     date:
         order: [ :day, :month, :year ]
-        this:
-            one: 'date'
-        	other: 'dates'
+    date_this:
+        one: 'date'
+        other: 'dates'
