@@ -16,6 +16,7 @@ en:
         ion: '{{what}} Association'
         record: 'Associate {{what}} to {{whom}}'
         to: 'Associate to {{what}}'
+        to_from: 'Associate to {{what}} from {{whom}}'
     author:
         one: 'author'
         other: 'authors'
@@ -25,7 +26,7 @@ en:
         to: 'Back to {{what}}'
         to_in: 'Back to {{what}} in {{where}}'
     browse:
-        by: 'Browse {{what}} {{whom}}'
+        by: 'Browse {{what}} by {{whom}}'
         records: 'Browse {{what}}'
         this: 'Browse'
     cancel:

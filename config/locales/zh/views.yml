@@ -16,6 +16,7 @@ zh:
         ion: '{{what}}关联 '
         record: '{{what}}与{{whom}}之间的关联'
         to: '与{{what}}的关联'
+        to_from: 'Associate to {{what}} from {{whom}}'
     author:
         one: 'author'
         other: 'authors'

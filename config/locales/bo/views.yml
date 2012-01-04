@@ -16,6 +16,7 @@ bo:
         ion: '{{what}}འབྲལ་ལྡན།'
         record: '{{what}}དང་{{whom}}དབར་གྱི་འབྲེལ་ལྡན།'
         to: '{{what}}དང་འབྲེལ་ལྡན།'
+        to_from: 'Associate to {{what}} from {{whom}}'
     author:
         one: 'author'
         other: 'authors'

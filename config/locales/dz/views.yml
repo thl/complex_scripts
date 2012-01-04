@@ -16,6 +16,7 @@ dz:
         ion: '{{what}} ལུ་འབྲེལ་བ།'
         record: '{{what}} འདི་ {{whom}}ལུ་ མཉམ་སྦྲགས་འབད།'
         to: '{{what}} ལུ་མཉམ་སྦྲགས་འབད།'
+        to_from: 'Associate to {{what}} from {{whom}}'
     author:
         one: 'author'
         other: 'authors'
