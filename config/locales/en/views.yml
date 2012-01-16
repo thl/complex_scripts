@@ -64,6 +64,7 @@ en:
     execute: 'Execute'
     for: '{{what}} for {{whom}}'
     found: 'Found {{what}}'
+    from: 'From {{where}}'
     get: 'Get {{what}}'
     go: 'Go'
     home:
@@ -134,6 +135,7 @@ en:
     this:
         record: 'this {{what}}'
         this: 'this'
+    to: 'To {{where}}'
     translat:
         e: 'Translate'
         ion: 'translation'

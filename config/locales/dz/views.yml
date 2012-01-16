@@ -64,6 +64,7 @@ dz:
     execute: 'ལག་ལེན་འཐབ།'
     for: '{{whom}} དོན་ལུ་ {{what}}'
     found: '{{what}} འཚོལ་ཐོབ་ཅི།'
+    from: 'From {{where}}'
     get: '{{what}} ལེན།'
     go: 'འགྱོ།'
     home:
@@ -136,6 +137,7 @@ dz:
     this:
         record: '{{what}} འདི།'
         this: 'འདི།'
+    to: 'To {{where}}'
     translat:
         e: 'སྐད་བསྒྱུར་འབད།'
         ion: 'སྐད་བསྒྱུར།'

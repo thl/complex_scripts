@@ -64,6 +64,7 @@ zh:
     execute: '执行'
     for: '{{whom}}的{{what}}'
     found: '发现{{what}}'
+    from: 'From {{where}}'
     get: '获得{{what}}'
     go: '前往'
     home:
@@ -136,6 +137,7 @@ zh:
     this:
         record: '这个{{what}}'
         this: '这个'
+    to: 'To {{where}}'
     translat:
         e: '翻译'
         ion: '译文'

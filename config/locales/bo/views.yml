@@ -64,6 +64,7 @@ bo:
     execute: 'ལག་བསྟར།'
     for: '{{whom}}ཡི་{{what}}'
     found: '{{what}}མཐོང་བ།'
+    from: 'From {{where}}'
     get: '{{what}}  ཐོབ་པ།'
     go: 'སོང་།'
     home:
@@ -136,6 +137,7 @@ bo:
     this:
         record: '{{what}}འདི།'
         this: 'འདི།'
+    to: 'To {{where}}'
     translat:
         e: 'ཡིག་བསྒྱུར།'
         ion: 'བསྒྱུར་རྩོམ།'
