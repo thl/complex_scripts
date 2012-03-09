@@ -32,7 +32,11 @@ bo:
     cancel:
         record: '{{what}}འདོར་བ།'
         this: 'འདོར་བ།'
-    changes: 'བཟོ་བཅོས།'
+    change:
+        record: 'Change {{what}}'
+        this:
+            one: 'Change'
+            other: 'བཟོ་བཅོས།'
     configure: 'སྡེབ་སྒྲིག'
     copyright:
         message:

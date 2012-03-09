@@ -32,7 +32,14 @@ en:
     cancel:
         record: 'Cancel {{what}}'
         this: 'Cancel'
-    changes: 'Changes'
+    change:
+        record: 'Change {{what}}'
+        this:
+            one: 'Change'
+            other: 'Changes'
+    child:
+        one: 'Child'
+        other: 'Children'
     configure: 'Configure'
     copyright:
         message:
@@ -109,6 +116,9 @@ en:
         this: 'or'
     parent:
         of: 'Parent {{who}}'
+        this:
+            one: 'Parent'
+            other: 'Parents'
     results:
         next: 'Next'
         none: 'No results found!'
@@ -122,12 +132,14 @@ en:
         tips: 'search tips'
     see:
         record: 'See {{what}}'
+    set: 'Set {{what}}'
     settings: 'Settings'
     sign:
         in: 'Sign in'
         out: 'sign out'
     select:
         all: 'Select all'
+        this: 'Select'
     show: 'Show'
     tibetan:
         script: 'Tibetan script'
@@ -148,6 +160,6 @@ en:
     what_is: 'what is {{what}}?'
     date:
         order: [ :day, :month, :year ]
-    date_this:
-        one: 'date'
-        other: 'dates'
+        this:
+            one: 'date'
+            other: 'dates'

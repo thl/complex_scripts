@@ -1,7 +1,7 @@
-<%= display_if_not_blank ComplexScripts::Language.human_attribute_name('title').s, h(@language.title).s %>
-<%= display_if_not_blank ComplexScripts::Language.human_attribute_name('code').s, h(@language.code).s %>
-<%= display_if_not_blank ComplexScripts::Language.human_attribute_name('locale').s, h(@language.locale).s %>
-<%= display_if_not_blank ComplexScripts::Language.human_attribute_name('use_for_interface').s, (@language.use_for_interface ? 'Yes' : 'No').s %>
+<%= display_if_not_blank ComplexScripts::Language.human_attribute_name(:title).s, h(@language.title).s %>
+<%= display_if_not_blank ComplexScripts::Language.human_attribute_name(:code).s, h(@language.code).s %>
+<%= display_if_not_blank ComplexScripts::Language.human_attribute_name(:locale).s, h(@language.locale).s %>
+<%= display_if_not_blank ComplexScripts::Language.human_attribute_name(:use_for_interface).s, (@language.use_for_interface ? 'Yes' : 'No').s %>
 <%= display_if_not_blank(ts(:unicode_range), "#{@language.unicode_codepoint_start} - #{@language.unicode_codepoint_end}") if !@language.unicode_codepoint_start.nil? && !@language.unicode_codepoint_end.nil? %>
 <p>&nbsp;<br/>
 <% authorized_only hash_for_edit_language_path do %>

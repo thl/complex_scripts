@@ -32,7 +32,11 @@ dz:
     cancel:
         record: '{{what}} ཆ་མེད་གཏང་།'
         this: 'ཆ་མེད་གཏང་།'
-    changes: 'བསྒྱུར་བཅོས་ཚུ།'
+    change:
+        record: 'Change {{what}}'
+        this:
+            one: 'Change'
+            other: 'བསྒྱུར་བཅོས་ཚུ།'
     configure: 'རིམ་སྒྲིག་འབད།'
     copyright:
         message:

@@ -20,7 +20,11 @@ module ComplexScriptsHelper
       language = I18n.locale
       options[:lang] = language
       options['xml:lang'] = language
-      options[:class] = language
+      if options[:class].blank?
+        options[:class] = language
+      else
+        options[:class] << " #{language}"
+      end
     end
     return options
   end

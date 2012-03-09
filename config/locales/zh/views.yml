@@ -32,7 +32,11 @@ zh:
     cancel:
         record: '取消{{what}} '
         this: '取消'
-    changes: '改动'
+    change:
+        record: 'Change {{what}}'
+        this:
+            one: 'Change'
+            other: '改动'
     configure: '配置'
     copyright:
         message:

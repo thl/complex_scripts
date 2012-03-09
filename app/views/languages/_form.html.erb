@@ -1,24 +1,24 @@
 <p>
-   <b><%= ComplexScripts::Language.human_attribute_name('title').s %></b><br />
+   <b><%= ComplexScripts::Language.human_attribute_name(:title).s %></b><br />
 <%= f.text_field :title %>
 </p>
 <p>
-    <b><%= ComplexScripts::Language.human_attribute_name('code').s %></b><br />
+    <b><%= ComplexScripts::Language.human_attribute_name(:code).s %></b><br />
 <%= f.text_field :code %>
 </p>
 <p>
-    <b><%= ComplexScripts::Language.human_attribute_name('locale').s %></b><br />
+    <b><%= ComplexScripts::Language.human_attribute_name(:locale).s %></b><br />
 <%= f.text_field :locale %>
 </p>
 <p>
-    <b><%= ComplexScripts::Language.human_attribute_name('use_for_interface').s %></b>
+    <b><%= ComplexScripts::Language.human_attribute_name(:use_for_interface).s %></b>
 <%= f.check_box :use_for_interface %>
 </p>
 <p>
-    <b><%= ComplexScripts::Language.human_attribute_name('unicode_codepoint_start').s %></b><br />
+    <b><%= ComplexScripts::Language.human_attribute_name(:unicode_codepoint_start).s %></b><br />
 <%= f.text_field :unicode_codepoint_start %>
 </p>
 <p>
-    <b><%= ComplexScripts::Language.human_attribute_name('unicode_codepoint_end').s %></b><br />
+    <b><%= ComplexScripts::Language.human_attribute_name(:unicode_codepoint_end).s %></b><br />
 <%= f.text_field :unicode_codepoint_end %>
 </p>

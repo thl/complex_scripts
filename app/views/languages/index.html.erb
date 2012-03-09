@@ -2,10 +2,10 @@
 <table border='1' class="normal">
    <tr>
      <th><%= ComplexScripts::Language.human_name.titleize.s %></th>
-     <th><%= ComplexScripts::Language.human_attribute_name('code').s %></th>
-     <th><%= ComplexScripts::Language.human_attribute_name('locale').s %></th>
+     <th><%= ComplexScripts::Language.human_attribute_name(:code).s %></th>
+     <th><%= ComplexScripts::Language.human_attribute_name(:locale).s %></th>
 	 <th><%= ts(:unicode_range) %></th>
-     <th><%= ComplexScripts::Language.human_attribute_name('use_for_interface').s %>?</th>
+     <th><%= ComplexScripts::Language.human_attribute_name(:use_for_interface).s %>?</th>
    </tr>
 <% can_edit = authorized? hash_for_edit_language_path
    for language in @languages %>
