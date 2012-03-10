@@ -4,6 +4,7 @@ bo:
     add:
         record: '{{what}}སྣོན་པ།'
         this: 'ཁ་སྣོན།'
+    admin: 'དོ་དམ།'
     advanced: 'མཐོ་རིམ་གྱི་'
     affirmation: 'ཡིན།'
     all:

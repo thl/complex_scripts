@@ -4,6 +4,7 @@ dz:
     add:
         record: '{{what}} ཁ་སྐོང་རྐྱབས།'
         this: 'ཁ་སྐོང་རྐྱབས།'
+    admin: 'བདག་སྐྱོང་པ།'
     advanced: 'མཐོ་རིམ་ཅན།'
     affirmation: 'ཨིན།'
     all:

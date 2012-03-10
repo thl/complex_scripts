@@ -4,6 +4,7 @@ zh:
     add:
         record: '添加{{what}}'
         this: '添加'
+    admin: '管理'
     advanced: '高级的'
     affirmation: '是'
     all:
