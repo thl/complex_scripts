@@ -56,6 +56,7 @@ en:
             d: 'Created at'
             record: 'Create {{what}}'
             this: 'Create'
+            requirement: 'A {{what}} must be created from a {{whom}}.'
         ing: 'Creating {{what}}'
     delete:
         confirmation: 'Are you sure?'
@@ -78,7 +79,11 @@ en:
     home:
         this: 'Home'
         for: '{{what}} Home'
-    id: '{{what}} ID'
+    id:
+        record: '{{what}} ID'
+        this:
+            one: 'ID'
+            other: 'IDs'
     in: '{{what}} in {{where}}'
     language:
         chinese: 'Chinese'
@@ -120,6 +125,9 @@ en:
         this:
             one: 'Parent'
             other: 'Parents'
+    primary:
+        this: 'Primary'
+        record: 'Primary {{what}}'
     results:
         next: 'Next'
         none: 'No results found!'
@@ -133,14 +141,17 @@ en:
         tips: 'search tips'
     see:
         record: 'See {{what}}'
+    select:
+        all: 'Select all'
+        ing: 'Selecting {{what}}'
+        record: 'Select {{what}}'
+        relation: 'Select a {{what}} to relate to {{whom}}.'
+        this: 'Select'
     set: 'Set {{what}}'
     settings: 'Settings'
     sign:
         in: 'Sign in'
         out: 'sign out'
-    select:
-        all: 'Select all'
-        this: 'Select'
     show: 'Show'
     tibetan:
         script: 'Tibetan script'

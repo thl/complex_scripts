@@ -38,6 +38,9 @@ zh:
         this:
             one: 'Change'
             other: '改动'
+    child:
+        one: 'Child'
+        other: 'Children'
     configure: '配置'
     copyright:
         message:
@@ -53,6 +56,7 @@ zh:
             d: 'Created at'
             record: '创建{{what}}'
             this: '创建'
+            requirement: 'A {{what}} must be created from a {{whom}}.'
         ing: 'Creating {{what}}'
     delete:
         confirmation: '您确定吗?'
@@ -75,7 +79,11 @@ zh:
     home:
         this: '主页'
         for: '{{what}}的主页'
-    id: ' {{what}}的标示'
+    id:
+        record: '{{what}}的标示'
+        this:
+            one: 'ID'
+            other: 'IDs'
     in: '位于{{where}}的{{what}}'
     language:
         chinese: '中文'
@@ -114,6 +122,12 @@ zh:
         this: '或者'
     parent:
         of: '父代{{who}}'
+        this:
+            one: 'Parent'
+            other: 'Parents'
+    primary:
+        this: 'Primary'
+        record: 'Primary {{what}}'
     results:
         next: '下一个'
         none: '没有找到结果!'
@@ -127,14 +141,17 @@ zh:
         tips: '搜索提示'
     see:
         record: '参见{{what}}'
+    select:
+        all: '全选'
+        ing: 'Selecting {{what}}'
+        record: 'Select {{what}}'
+        relation: 'Select a {{what}} to relate to {{whom}}.'
+        this: 'Select'
     set: 'Set {{what}}'
     settings: '设置'
     sign:
         in: '登入'
         out: '登出'
-    select:
-        all: '全选'
-        this: 'Select'
     show: '显示'
     tibetan:
         script: '藏文字体'

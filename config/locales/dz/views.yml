@@ -38,6 +38,9 @@ dz:
         this:
             one: 'Change'
             other: 'བསྒྱུར་བཅོས་ཚུ།'
+    child:
+        one: 'Child'
+        other: 'Children'
     configure: 'རིམ་སྒྲིག་འབད།'
     copyright:
         message:
@@ -53,6 +56,7 @@ dz:
             d: 'Created at'
             record: '{{what}} གསར་བསྐྲུན་འབད།'
             this: 'གསར་བསྐྲུན་འབད།'
+            requirement: 'A {{what}} must be created from a {{whom}}.'
         ing: 'Creating {{what}}'
     delete:
         confirmation: 'ངེས་བདེན་ཨིན་ན་?'
@@ -75,7 +79,11 @@ dz:
     home:
         this: 'མ་ཤོག'
         for: '{{what}} མ་ཤོག'
-    id: '{{what}} ཨའི་ཌི།'
+    id:
+        record: '{{what}} ཨའི་ཌི།'
+        this:
+            one: 'ID'
+            other: 'IDs'
     in: '{{what}} ནང་གི་ {{where}}'
     language:
         chinese: 'Chinese'
@@ -114,6 +122,12 @@ dz:
         this: 'ཡང་ན།'
     parent:
         of: '{{who}} འབྱུང་ས།'
+        this:
+            one: 'Parent'
+            other: 'Parents'
+    primary:
+        this: 'Primary'
+        record: 'Primary {{what}}'
     results:
         next: 'ཤུལ་མམ།'
         none: 'གྲུབ་འབྲས་མིན་འདུག!'
@@ -127,14 +141,17 @@ dz:
         tips: 'འཚོལ་ཐངས།'
     see:
         record: 'བལྟ་ {{what}}'
+    select:
+        all: 'ཆ་མཉམ་སེལ་འཐུ་འབད།'
+        ing: 'Selecting {{what}}'
+        record: 'Select {{what}}'
+        relation: 'Select a {{what}} to relate to {{whom}}.'
+        this: 'Select'
     set: 'Set {{what}}'
     settings: 'སྒྲིག་སྟངས།'
     sign:
         in: 'ནང་བསྐྱོད།'
         out: 'ཕྱིར་བསྐྱོད།'
-    select:
-        all: 'ཆ་མཉམ་སེལ་འཐུ་འབད།'
-        this: 'Select'
     show: 'སྟོན།'
     tibetan:
         script: 'བོད་ཡིག'
