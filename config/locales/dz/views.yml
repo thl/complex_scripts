@@ -13,7 +13,9 @@ dz:
     another: '{{what}} སོར་སོ།'
     application: 'ལག་ལེན།'
     associate:
-        d: 'འབྲེལ་བ་ཡོད་པའི་ {{what}}'
+        d:
+            record: 'འབྲེལ་བ་ཡོད་པའི་ {{what}}'
+            with: '{{what}} Associated with {{whom}}'
         ion: '{{what}} ལུ་འབྲེལ་བ།'
         record: '{{what}} འདི་ {{whom}}ལུ་ མཉམ་སྦྲགས་འབད།'
         to: '{{what}} ལུ་མཉམ་སྦྲགས་འབད།'

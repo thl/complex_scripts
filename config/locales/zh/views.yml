@@ -13,7 +13,9 @@ zh:
     another: '另一个{{what}}'
     application: '应用程序'
     associate:
-        d: '关联的{{what}}'
+        d:
+            record: '关联的{{what}}'
+            with: '{{what}} Associated with {{whom}}'
         ion: '{{what}}关联 '
         record: '{{what}}与{{whom}}之间的关联'
         to: '与{{what}}的关联'
