@@ -109,6 +109,7 @@ dz:
         none: 'བརྒྱུད་ལམ་ འཚོལ་མ་ཐོབ།'
     member: 'འཐུས་མི།'
     more:
+        record: 'More {{what}}'
         this: 'ཁ་གསལ།'
     name:
         for: '{{what}} མིང་།'
@@ -137,6 +138,10 @@ dz:
         previous: 'ཧེ་མམ།'
     save: '{{what}} སྲུངས།'
     search:
+        advanced: 'Advanced Search'
+        begins: 'Starts with'
+        contains: 'Contains'
+        exactly: 'Exactly'
         full_text: 'ཚིག་ཡིག་ཆ་ཚང་།'
         record: '{{what}} འཚོལ་ཞིབ།'
         results: 'ཞིབ་འཚོལ་གྲུབ་འབྲས།'
@@ -155,7 +160,9 @@ dz:
     sign:
         in: 'ནང་བསྐྱོད།'
         out: 'ཕྱིར་བསྐྱོད།'
-    show: 'སྟོན།'
+    show:
+        record: 'Show {{what}}'
+        this: 'སྟོན།'
     tibetan:
         script: 'བོད་ཡིག'
         transliteration: 'བོད་ཡིག་ཕབ་བསྒྱུར།'

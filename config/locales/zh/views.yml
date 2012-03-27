@@ -109,6 +109,7 @@ zh:
         none: '未发现媒体文件'
     member: '会员'
     more:
+        record: 'More {{what}}'
         this: '更多'
     name:
         for: '{{what}}名称'
@@ -137,6 +138,10 @@ zh:
         previous: '前一个'
     save: '保存{{what}}'
     search:
+        advanced: 'Advanced Search'
+        begins: 'Starts with'
+        contains: 'Contains'
+        exactly: 'Exactly'
         full_text: '全文'
         record: '{{what}}搜索'
         results: '搜索结果'
@@ -155,7 +160,9 @@ zh:
     sign:
         in: '登入'
         out: '登出'
-    show: '显示'
+    show:
+        record: 'Show {{what}}'
+        this: '显示'
     tibetan:
         script: '藏文字体'
         transliteration: '藏文转写'
