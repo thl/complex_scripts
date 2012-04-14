@@ -1,42 +1,42 @@
 # Localization file for Chinese of complex scripts.
 zh:
-    according_to: '根据{{whom}}'
+    according_to: '根据%{whom}'
     add:
-        record: '添加{{what}}'
+        record: '添加%{what}'
         this: '添加'
     admin: '管理'
     advanced: '高级的'
     affirmation: '是'
     all:
-        records: '全部{{what}}'
+        records: '全部%{what}'
         these: 'all'
-    another: '另一个{{what}}'
+    another: '另一个%{what}'
     application: '应用程序'
     associate:
         d:
-            record: '关联的{{what}}'
-            with: '{{what}} Associated with {{whom}}'
-        ion: '{{what}}关联 '
-        record: '{{what}}与{{whom}}之间的关联'
-        to: '与{{what}}的关联'
-        to_from: 'Associate to {{what}} from {{whom}}'
+            record: '关联的%{what}'
+            with: '%{what} Associated with %{whom}'
+        ion: '%{what}关联 '
+        record: '%{what}与%{whom}之间的关联'
+        to: '与%{what}的关联'
+        to_from: 'Associate to %{what} from %{whom}'
     author:
         one: 'author'
         other: 'authors'
-    available: '可获得的{{what}}'
+    available: '可获得的%{what}'
     back:
         this: '返回'
-        to: '返回至{{what}}'
-        to_in: '返回至{{where}}成为{{what}}'
+        to: '返回至%{what}'
+        to_in: '返回至%{where}成为%{what}'
     browse:
-        by: '浏览{{what}} {{whom}}'
-        records: '浏览{{what}} '
+        by: '浏览%{what} %{whom}'
+        records: '浏览%{what} '
         this: '浏览'
     cancel:
-        record: '取消{{what}} '
+        record: '取消%{what} '
         this: '取消'
     change:
-        record: 'Change {{what}}'
+        record: 'Change %{what}'
         this:
             one: 'Change'
             other: '改动'
@@ -46,52 +46,52 @@ zh:
     configure: '配置'
     copyright:
         message:
-            provider: '本{{what}} 是由{{whom}}提供'
+            provider: '本%{what} 是由%{whom}提供'
             holder:
-                one: '版权所有者为 {{whom}}'
-                other: '版权所有者为 {{whom}}'
+                one: '版权所有者为 %{whom}'
+                other: '版权所有者为 %{whom}'
     count:
-        one: '1{{what}} '
-        other: '{{count}} {{what}}'
+        one: '1%{what} '
+        other: '%{count} %{what}'
     creat:
         e:
             d: 'Created at'
-            record: '创建{{what}}'
+            record: '创建%{what}'
             this: '创建'
-            requirement: 'A {{what}} must be created from a {{whom}}.'
-        ing: 'Creating {{what}}'
+            requirement: 'A %{what} must be created from a %{whom}.'
+        ing: 'Creating %{what}'
     delete:
         confirmation: '您确定吗?'
-        successful: ' {{what}}删除成功'
+        successful: ' %{what}删除成功'
         this: '删除'
     edit:
         ing:
-            record: '编辑{{what}}'
+            record: '编辑%{what}'
             this: '编辑'
-        failure: '错误更新{{what}}'
-        record: '编辑{{what}}'
+        failure: '错误更新%{what}'
+        record: '编辑%{what}'
         this: '编辑'
-        successful: '{{what}}已经成功更新'
+        successful: '%{what}已经成功更新'
     execute: '执行'
-    for: '{{whom}}的{{what}}'
+    for: '%{whom}的%{what}'
     found:
-        records: '发现{{what}}'
+        records: '发现%{what}'
         none:
             results: '没有找到结果!'
-            records: 'No {{what}} were found.'
+            records: 'No %{what} were found.'
             none: '无'
-    from: 'From {{where}}'
-    get: '获得{{what}}'
+    from: 'From %{where}'
+    get: '获得%{what}'
     go: '前往'
     home:
         this: '主页'
-        for: '{{what}}的主页'
+        for: '%{what}的主页'
     id:
-        record: '{{what}}的标示'
+        record: '%{what}的标示'
         this:
             one: 'ID'
             other: 'IDs'
-    in: '位于{{where}}的{{what}}'
+    in: '位于%{where}的%{what}'
     language:
         chinese: '中文'
         dzongkha: '宗卡语'
@@ -99,89 +99,89 @@ zh:
         tibetan: 'Tibetan'
     list:
         ing:
-            in: '在{{where}}列出{{what}}'
-            records: '列出{{what}}'
+            in: '在%{where}列出%{what}'
+            records: '列出%{what}'
     manage:
-        ment: '{{what}}的管理'
-        record: '管理{{what}}'
+        ment: '%{what}的管理'
+        record: '管理%{what}'
         this: '管理'
-    master: '控制{{what}}'
+    master: '控制%{what}'
     material: '资料'
     media:
         none: '未发现媒体文件'
     member: '会员'
     more:
-        record: 'More {{what}}'
+        record: 'More %{what}'
         this: '更多'
     name:
-        for: '{{what}}名称'
-        in: '名称{{what}}'
+        for: '%{what}名称'
+        in: '名称%{what}'
     negation: '否'
     new:
-        major: '新主题{{what}}'
-        record: '新{{what}}'
-        successful: '成功创建{{what}}'
+        major: '新主题%{what}'
+        record: '新%{what}'
+        successful: '成功创建%{what}'
         this: '新'
-        under: '{{where}}底下的新{{what}}'
+        under: '%{where}底下的新%{what}'
     options: '选择'
     or:
-        record: 'or {{what}}'
+        record: 'or %{what}'
         this: '或者'
     parent:
-        of: '父代{{who}}'
+        of: '父代%{who}'
         this:
             one: 'Parent'
             other: 'Parents'
     primary:
         this: 'Primary'
-        record: 'Primary {{what}}'
+        record: 'Primary %{what}'
     results:
         next: '下一个'
         previous: '前一个'
-    save: '保存{{what}}'
+    save: '保存%{what}'
     search:
         advanced: 'Advanced Search'
         begins: 'Starts with'
         contains: 'Contains'
         exactly: 'Exactly'
         full_text: '全文'
-        record: '{{what}}搜索'
+        record: '%{what}搜索'
         results: '搜索结果'
         this: '搜索'
         tips: '搜索提示'
     see:
-        record: '参见{{what}}'
+        record: '参见%{what}'
     select:
         all: '全选'
-        ing: 'Selecting {{what}}'
-        record: 'Select {{what}}'
-        relation: 'Select a {{what}} to relate to {{whom}}.'
+        ing: 'Selecting %{what}'
+        record: 'Select %{what}'
+        relation: 'Select a %{what} to relate to %{whom}.'
         this: 'Select'
-    set: 'Set {{what}}'
+    set: 'Set %{what}'
     settings: '设置'
     sign:
         in: '登入'
         out: '登出'
     show:
-        record: 'Show {{what}}'
+        record: 'Show %{what}'
         this: '显示'
     tibetan:
         script: '藏文字体'
         transliteration: '藏文转写'
     this:
-        record: '这个{{what}}'
+        record: '这个%{what}'
         this: '这个'
-    to: 'To {{where}}'
+    to: 'To %{where}'
     translat:
         e: '翻译'
         ion: '译文'
     update:
         this: '更新'
         d:
-            record: '最后更新{{when}}'
+            record: '最后更新%{when}'
             this: 'Updated at'
     url_for_reference: '参考URL地址'
-    what_is: '{{what}}是什么?'
+    what_is: '%{what}是什么?'
     date:
         order: [ :day, :month, :year ]
         this:

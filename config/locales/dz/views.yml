@@ -1,42 +1,42 @@
 # Localization file for Dzongkha of complex scripts.
 dz:
-    according_to: '{{whom}} དང་འཁྲིལཝ་ད་'
+    according_to: '%{whom} དང་འཁྲིལཝ་ད་'
     add:
-        record: '{{what}} ཁ་སྐོང་རྐྱབས།'
+        record: '%{what} ཁ་སྐོང་རྐྱབས།'
         this: 'ཁ་སྐོང་རྐྱབས།'
     admin: 'བདག་སྐྱོང་པ།'
     advanced: 'མཐོ་རིམ་ཅན།'
     affirmation: 'ཨིན།'
     all:
-        records: '{{what}} ཆ་མཉམ།'
+        records: '%{what} ཆ་མཉམ།'
         these: 'all'
-    another: '{{what}} སོར་སོ།'
+    another: '%{what} སོར་སོ།'
     application: 'ལག་ལེན།'
     associate:
         d:
-            record: 'འབྲེལ་བ་ཡོད་པའི་ {{what}}'
-            with: '{{what}} Associated with {{whom}}'
-        ion: '{{what}} ལུ་འབྲེལ་བ།'
-        record: '{{what}} འདི་ {{whom}}ལུ་ མཉམ་སྦྲགས་འབད།'
-        to: '{{what}} ལུ་མཉམ་སྦྲགས་འབད།'
-        to_from: 'Associate to {{what}} from {{whom}}'
+            record: 'འབྲེལ་བ་ཡོད་པའི་ %{what}'
+            with: '%{what} Associated with %{whom}'
+        ion: '%{what} ལུ་འབྲེལ་བ།'
+        record: '%{what} འདི་ %{whom}ལུ་ མཉམ་སྦྲགས་འབད།'
+        to: '%{what} ལུ་མཉམ་སྦྲགས་འབད།'
+        to_from: 'Associate to %{what} from %{whom}'
     author:
         one: 'author'
         other: 'authors'
-    available: 'ཡོད་པའི་ {{what}}།'
+    available: 'ཡོད་པའི་ %{what}།'
     back:
         this: 'རྒྱབ།'
-        to: '{{what}} ལུ་ལོག།'
-        to_in: '{{where}} ནང་གི་ {{what}} ལུ་ལོག།'
+        to: '%{what} ལུ་ལོག།'
+        to_in: '%{where} ནང་གི་ %{what} ལུ་ལོག།'
     browse:
-        by: '{{whom}} {{what}} བརྡ་འཚོལ་འབད།'
-        records: '{{what}} བརྡ་འཚོལ་འབད།'
+        by: '%{whom} %{what} བརྡ་འཚོལ་འབད།'
+        records: '%{what} བརྡ་འཚོལ་འབད།'
         this: 'བརྡ་འཚོལ་འབད།'
     cancel:
-        record: '{{what}} ཆ་མེད་གཏང་།'
+        record: '%{what} ཆ་མེད་གཏང་།'
         this: 'ཆ་མེད་གཏང་།'
     change:
-        record: 'Change {{what}}'
+        record: 'Change %{what}'
         this:
             one: 'Change'
             other: 'བསྒྱུར་བཅོས་ཚུ།'
@@ -46,52 +46,52 @@ dz:
     configure: 'རིམ་སྒྲིག་འབད།'
     copyright:
         message:
-            provider: '{{what}} འདི་ {{whom}} གིས་བྱིན་ཡོདཔ།'
+            provider: '%{what} འདི་ %{whom} གིས་བྱིན་ཡོདཔ།'
             holder:
-                one: 'འདྲ་བཤུས་དབང་ཆ་ འཆང་མི་ {{whom}}།'
-                other: 'འདྲ་བཤུས་དབང་ཆ་ འཆང་མི་ {{whom}}།'
+                one: 'འདྲ་བཤུས་དབང་ཆ་ འཆང་མི་ %{whom}།'
+                other: 'འདྲ་བཤུས་དབང་ཆ་ འཆང་མི་ %{whom}།'
     count:
-        one: '{{what}} ༡'
-        other: '{{what}} {{count}}'
+        one: '%{what} ༡'
+        other: '%{what} %{count}'
     creat:
         e:
             d: 'Created at'
-            record: '{{what}} གསར་བསྐྲུན་འབད།'
+            record: '%{what} གསར་བསྐྲུན་འབད།'
             this: 'གསར་བསྐྲུན་འབད།'
-            requirement: 'A {{what}} must be created from a {{whom}}.'
-        ing: 'Creating {{what}}'
+            requirement: 'A %{what} must be created from a %{whom}.'
+        ing: 'Creating %{what}'
     delete:
         confirmation: 'ངེས་བདེན་ཨིན་ན་?'
-        successful: '{{what}} མཐར་འཁྱོལ་ཅན་སྦེ་བཏོན་བཏང་ཡོདཔ།'
+        successful: '%{what} མཐར་འཁྱོལ་ཅན་སྦེ་བཏོན་བཏང་ཡོདཔ།'
         this: 'བཏོན་གཏང་།'
     edit:
         ing:
-            record: '{{what}} ཞུན་དག་འབད་དོ།'
+            record: '%{what} ཞུན་དག་འབད་དོ།'
             this: 'ཞུན་དག་འབད་དོ།'
-        failure: ' {{what}} ཞུན་དག་འབད་བའི་སྐབས་ལུ་འཛོལ་བ།'
-        record: '{{what}} ཞུན་དག'
+        failure: ' %{what} ཞུན་དག་འབད་བའི་སྐབས་ལུ་འཛོལ་བ།'
+        record: '%{what} ཞུན་དག'
         this: 'ཞུན་དག'
-        successful: '{{what}} མཐར་འཁྱོལ་ཅན་སྦེ་དུས་མཐུན་བཟོ་ཡོདཔ།'
+        successful: '%{what} མཐར་འཁྱོལ་ཅན་སྦེ་དུས་མཐུན་བཟོ་ཡོདཔ།'
     execute: 'ལག་ལེན་འཐབ།'
-    for: '{{whom}} དོན་ལུ་ {{what}}'
+    for: '%{whom} དོན་ལུ་ %{what}'
     found:
-        records: '{{what}} འཚོལ་ཐོབ་ཅི།'
+        records: '%{what} འཚོལ་ཐོབ་ཅི།'
         none:
             results: 'གྲུབ་འབྲས་མིན་འདུག!'
-            records: 'No {{what}} were found.'
+            records: 'No %{what} were found.'
             this: 'ཅི་མེད།'
-    from: 'From {{where}}'
-    get: '{{what}} ལེན།'
+    from: 'From %{where}'
+    get: '%{what} ལེན།'
     go: 'འགྱོ།'
     home:
         this: 'མ་ཤོག'
-        for: '{{what}} མ་ཤོག'
+        for: '%{what} མ་ཤོག'
     id:
-        record: '{{what}} ཨའི་ཌི།'
+        record: '%{what} ཨའི་ཌི།'
         this:
             one: 'ID'
             other: 'IDs'
-    in: '{{what}} ནང་གི་ {{where}}'
+    in: '%{what} ནང་གི་ %{where}'
     language:
         chinese: 'Chinese'
         dzongkha: 'རྫོང་ཁ།'
@@ -99,89 +99,89 @@ dz:
         tibetan: 'ཆོས་སྐད།'
     list:
         ing:
-            in: '{{where}} ནང་གི་ {{what}} ཐོ་བཀོད་འབད་ནི།'
-            records: '{{what}} ཐོ་བཀོད་འབད་ནི།'
+            in: '%{where} ནང་གི་ %{what} ཐོ་བཀོད་འབད་ནི།'
+            records: '%{what} ཐོ་བཀོད་འབད་ནི།'
     manage:
-        ment: '{{what}} འཛིན་སྐྱོང་།'
-        record: '{{what}} འཛིན་སྐྱོང་འབད།'
+        ment: '%{what} འཛིན་སྐྱོང་།'
+        record: '%{what} འཛིན་སྐྱོང་འབད།'
         this: 'འཛིན་སྐྱོང་འཐབ།'
-    master: 'ཨམ་ {{what}}'
+    master: 'ཨམ་ %{what}'
     material: 'རྒྱུ་ཆ།'
     media:
         none: 'བརྒྱུད་ལམ་ འཚོལ་མ་ཐོབ།'
     member: 'འཐུས་མི།'
     more:
-        record: 'More {{what}}'
+        record: 'More %{what}'
         this: 'ཁ་གསལ།'
     name:
-        for: '{{what}} མིང་།'
-        in: 'Name ({{what}})'
+        for: '%{what} མིང་།'
+        in: 'Name (%{what})'
     negation: 'མེན།'
     new:
-        major: '{{what}} གཙོ་བོ་གསརཔ།'
-        record: '{{what}} གསརཔ།'
-        successful: '{{what}} མཐར་འཁྱོལ་ཅན་སྦེ་གསར་བསྐྲུན་འབད་ཡོདཔ།'
+        major: '%{what} གཙོ་བོ་གསརཔ།'
+        record: '%{what} གསརཔ།'
+        successful: '%{what} མཐར་འཁྱོལ་ཅན་སྦེ་གསར་བསྐྲུན་འབད་ཡོདཔ།'
         this: 'གསརཔ།'
-        under: '{{where}} འོག་ལུ་ {{what}} གསརཔ།'
+        under: '%{where} འོག་ལུ་ %{what} གསརཔ།'
     options: 'གདམ་ཁ་ཚུ།'
     or:
-        record: 'or {{what}}'
+        record: 'or %{what}'
         this: 'ཡང་ན།'
     parent:
-        of: '{{who}} འབྱུང་ས།'
+        of: '%{who} འབྱུང་ས།'
         this:
             one: 'Parent'
             other: 'Parents'
     primary:
         this: 'Primary'
-        record: 'Primary {{what}}'
+        record: 'Primary %{what}'
     results:
         next: 'ཤུལ་མམ།'
         previous: 'ཧེ་མམ།'
-    save: '{{what}} སྲུངས།'
+    save: '%{what} སྲུངས།'
     search:
         advanced: 'Advanced Search'
         begins: 'Starts with'
         contains: 'Contains'
         exactly: 'Exactly'
         full_text: 'ཚིག་ཡིག་ཆ་ཚང་།'
-        record: '{{what}} འཚོལ་ཞིབ།'
+        record: '%{what} འཚོལ་ཞིབ།'
         results: 'ཞིབ་འཚོལ་གྲུབ་འབྲས།'
         this: 'འཚོལ་ཞིབ།'
         tips: 'འཚོལ་ཐངས།'
     see:
-        record: 'བལྟ་ {{what}}'
+        record: 'བལྟ་ %{what}'
     select:
         all: 'ཆ་མཉམ་སེལ་འཐུ་འབད།'
-        ing: 'Selecting {{what}}'
-        record: 'Select {{what}}'
-        relation: 'Select a {{what}} to relate to {{whom}}.'
+        ing: 'Selecting %{what}'
+        record: 'Select %{what}'
+        relation: 'Select a %{what} to relate to %{whom}.'
         this: 'Select'
-    set: 'Set {{what}}'
+    set: 'Set %{what}'
     settings: 'སྒྲིག་སྟངས།'
     sign:
         in: 'ནང་བསྐྱོད།'
         out: 'ཕྱིར་བསྐྱོད།'
     show:
-        record: 'Show {{what}}'
+        record: 'Show %{what}'
         this: 'སྟོན།'
     tibetan:
         script: 'བོད་ཡིག'
         transliteration: 'བོད་ཡིག་ཕབ་བསྒྱུར།'
     this:
-        record: '{{what}} འདི།'
+        record: '%{what} འདི།'
         this: 'འདི།'
-    to: 'To {{where}}'
+    to: 'To %{where}'
     translat:
         e: 'སྐད་བསྒྱུར་འབད།'
         ion: 'སྐད་བསྒྱུར།'
     update:
         this: 'དུས་མཐུན།'
         d:
-            record: 'དུས་མཐུན་མཇུག་ {{when}}'
+            record: 'དུས་མཐུན་མཇུག་ %{when}'
             this: 'Updated at'
     url_for_reference: 'ཁུངས་གཏུགས་ཡུ་ཨར་ཨེལ།'
-    what_is: '{{what}} ག་ཅི་སྨོ?'
+    what_is: '%{what} ག་ཅི་སྨོ?'
     date:
         order: [ :day, :month, :year ]
         this:
