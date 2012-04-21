@@ -54,7 +54,7 @@ module ComplexScriptsHelper
   # Not really related to complex scripts per se. Displays a title and attribute if attribute is not blank.
   def display_if_not_blank(name, attribute)
     if !attribute.blank?
-      return "<p><b>#{name}:</b> #{attribute}</p>"
+      return "<p><b>#{name}:</b> #{attribute}</p>".html_safe
     else
       return nil
     end

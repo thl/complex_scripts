@@ -10,4 +10,4 @@
        languages << link_to(lang_title, complex_scripts_change_language_path(language))
      end
    end %>
-<%= languages.join(' | ') %>
+<%= languages.join(' | ').html_safe %>

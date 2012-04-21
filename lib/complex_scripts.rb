@@ -1,11 +1,11 @@
 # ComplexScripts
 LANGUAGES = {:en => {:locale => 'eng-US', :title => 'language.english'}, :ne => {:locale => 'nep-NP', :title => 'language.nepali', :unicode_range => [2304, 2431]}, :bo => {:title => 'language.tibetan', :locale => 'bod-CN', :unicode_range => [3840, 4095]}, :dz => {:locale => 'dzo-BT', :title => 'language.dzongkha'}, :zh => {:locale => 'zho-CN', :title => 'language.chinese'}}
-UNICODE_RANGES = Array.new
+unicode_ranges = Array.new
 LANGUAGES.each do |key, value|
   range =  value[:unicode_range]
-  UNICODE_RANGES << [range[0], range[1], key] if !range.nil?
+  unicode_ranges << [range[0], range[1], key] if !range.nil?
 end
-UNICODE_RANGES = UNICODE_RANGES.freeze
+UNICODE_RANGES = unicode_ranges.freeze
 
 module ComplexScripts
   def ComplexScripts.character_within_unicode_range(ch)

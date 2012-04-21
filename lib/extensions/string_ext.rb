@@ -31,7 +31,7 @@ module ComplexScripts
           end
           i+=1
         end
-        return_string
+        return_string.html_safe
       end      
       alias :s :span
       
@@ -52,7 +52,7 @@ module ComplexScripts
           end
           i+=1
         end
-        return_string
+        return_string.html_safe
       end      
       alias :e :encode
       
@@ -130,9 +130,9 @@ module ComplexScripts
           when 'g' then return word[i-1]=='n' ? 'ng' : 'g'
           when 'z' then return word[i-1]=='d' ? 'dz' : 'z'
           end
-          return word[i].to_s
+          return word[i].to_s.html_safe
         else
-          return word[0].to_s
+          return word[0].to_s.html_safe
         end
       end
             
@@ -159,7 +159,7 @@ module ComplexScripts
       alias :ts :translate_and_span
 
       def translate_and_encode(options = {})
-        self.translate(options).to_xs
+        self.translate(options).to_xs.html_safe
       end
       alias :te :translate_and_encode
       
