@@ -2,7 +2,7 @@ class LanguagesController < AclController
   # GET /languages
   # GET /languages.xml
   def index
-    @languages = ComplexScripts::Language.find(:all, :order => 'title')
+    @languages = ComplexScripts::Language.order('title')
 
     respond_to do |format|
       format.html # index.rhtml
@@ -70,7 +70,6 @@ class LanguagesController < AclController
   def destroy
     @language = ComplexScripts::Language.find(params[:id])
     @language.destroy
-
     respond_to do |format|
       format.html { redirect_to languages_url }
       format.xml  { head :ok }

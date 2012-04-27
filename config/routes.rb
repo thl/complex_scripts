@@ -1,6 +1,6 @@
-ActionController::Routing::Routes.draw do |map|
-  map.namespace(:complex_scripts) do |complex_scripts|
-    complex_scripts.change_language 'session/change_language/:id', :controller => 'sessions', :action => 'change_language'
+Rails.application.routes.draw do
+  namespace :complex_scripts do
+    match 'session/change_language/:id' => 'sessions#change_language', :as => :change_language
   end
-  map.resources :languages
+  resources :languages
 end

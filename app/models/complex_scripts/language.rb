@@ -20,9 +20,9 @@ class ComplexScripts::Language < ActiveRecord::Base
 
   def self.accepted_language_codes_array
     if columns_hash['use_for_interface'].nil?
-      languages = ComplexScripts::Language.find(:all)
+      languages = ComplexScripts::Language.all
     else
-      languages = ComplexScripts::Language.find(:all, :conditions => {:use_for_interface => true})
+      languages = ComplexScripts::Language.where(:use_for_interface => true)
     end
     languages.collect {|l| l.code[0..1]}.freeze
   end
@@ -30,7 +30,7 @@ class ComplexScripts::Language < ActiveRecord::Base
   # {'en' => {:locale => 'eng-US', :title => 'English', :unicode_range => [0, 255]}}
   def self.languages_hash
     languages_hash = Hash.new
-    for language in ComplexScripts::Language.find(:all)
+    for language in ComplexScripts::Language.all
       language_hash = {:locale => language.locale, :title => language.title}
       language_hash[:unicode_range] = [language.unicode_codepoint_start, language.unicode_codepoint_end] if !language[:unicode_codepoint_start].nil? && !language[:unicode_codepoint_end].nil?
       languages_hash[language.code[0..1]] = language_hash
@@ -47,6 +47,6 @@ class ComplexScripts::Language < ActiveRecord::Base
   end
   
   def self.find_iso_code(language)
-    ComplexScripts::Language.find(:first, :conditions => ['LEFT(code, 2) = ?', language.to_s])
+    ComplexScripts::Language.where(['LEFT(code, 2) = ?', language.to_s]).first
   end
 end
