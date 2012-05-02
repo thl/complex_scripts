@@ -61,12 +61,12 @@ module ComplexScriptsHelper
   end
   
   def translate_and_span(key, options = {})
-    translate(key, options).span
+    translate(key, options).span.html_safe
   end
   alias :ts :translate_and_span
 
   def translate_and_encode(key, options = {})
-    translate(key, options).to_xs
+    translate(key, options).to_xs.html_safe
   end
   alias :te :translate_and_encode
 end
