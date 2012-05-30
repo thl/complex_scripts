@@ -38,7 +38,7 @@ class LanguagesController < AclController
 
     respond_to do |format|
       if @language.save
-        flash[:notice] = ts('new.successful', :what => ComplexScripts::Language.human_name.capitalize)
+        flash[:notice] = ts('new.successful', :what => ComplexScripts::Language.model_name.human.capitalize)
         format.html { redirect_to language_url(@language) }
         format.xml  { head :created, :location => language_url(@language) }
       else
@@ -55,7 +55,7 @@ class LanguagesController < AclController
 
     respond_to do |format|
       if @language.update_attributes(params[:language])
-        flash[:notice] = ts('edit.successful', :what => ComplexScripts::Language.human_name.capitalize)
+        flash[:notice] = ts('edit.successful', :what => ComplexScripts::Language.model_name.human.capitalize)
         format.html { redirect_to language_url(@language) }
         format.xml  { head :ok }
       else
