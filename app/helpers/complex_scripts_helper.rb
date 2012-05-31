@@ -34,7 +34,7 @@ module ComplexScriptsHelper
   end
     
   def globalized_submit_tag(name, options = Hash.new)
-    options[:disabled_with] = 'Posting...'
+    options[:disable_with] = 'Processing...'
     submit_tag te(name), language_options(options)
   end
   

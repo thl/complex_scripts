@@ -4,7 +4,7 @@
 <%= display_if_not_blank ComplexScripts::Language.human_attribute_name(:use_for_interface).s, (@language.use_for_interface ? 'Yes' : 'No').s %>
 <%= display_if_not_blank(ts(:unicode_range), "#{@language.unicode_codepoint_start} - #{@language.unicode_codepoint_end}") if !@language.unicode_codepoint_start.nil? && !@language.unicode_codepoint_end.nil? %>
 <p>&nbsp;<br/>
-<% authorized_only hash_for_edit_language_path do %>
+<% if authorized? hash_for_edit_language_path %>
 <%=  link_to ts('edit.this'), edit_language_path(@language) %> |
 <% end %>
 <%= render :partial => 'persistent_links' %>
