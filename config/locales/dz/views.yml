@@ -183,7 +183,7 @@ dz:
     url_for_reference: 'ཁུངས་གཏུགས་ཡུ་ཨར་ཨེལ།'
     what_is: '%{what} ག་ཅི་སྨོ?'
     date:
-        order: [ :day, :month, :year ]
+        order: '[ :day, :month, :year ]'
         this:
             one: 'date'
-        	other: 'dates'
+            other: 'dates'

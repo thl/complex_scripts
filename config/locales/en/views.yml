@@ -29,7 +29,7 @@ en:
         to: 'Back to %{what}'
         to_in: 'Back to %{what} in %{where}'
     browse:
-        by: 'Browse %{what} by %{whom}'
+        by: 'Browse %{what} %{whom}'
         records: 'Browse %{what}'
         this: 'Browse'
     cancel:
@@ -183,7 +183,7 @@ en:
     url_for_reference: 'URL for reference'
     what_is: 'what is %{what}?'
     date:
-        order: [ :day, :month, :year ]
+        order: '[ :day, :month, :year ]'
         this:
             one: 'date'
             other: 'dates'

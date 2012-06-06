@@ -9,20 +9,20 @@ zh:
     affirmation: '是'
     all:
         records: '全部%{what}'
-        these: 'all'
+        these: '全部'
     another: '另一个%{what}'
     application: '应用程序'
     associate:
         d:
             record: '关联的%{what}'
-            with: '%{what} Associated with %{whom}'
+            with: '与 %{whom}有关联的 %{what}'
         ion: '%{what}关联 '
         record: '%{what}与%{whom}之间的关联'
         to: '与%{what}的关联'
         to_from: 'Associate to %{what} from %{whom}'
     author:
-        one: 'author'
-        other: 'authors'
+        one: '作者'
+        other: '作者'
     available: '可获得的%{what}'
     back:
         this: '返回'
@@ -36,13 +36,13 @@ zh:
         record: '取消%{what} '
         this: '取消'
     change:
-        record: 'Change %{what}'
+        record: '改动 %{what}'
         this:
-            one: 'Change'
+            one: '改动'
             other: '改动'
     child:
-        one: 'Child'
-        other: 'Children'
+        one: '儿童'
+        other: '儿童'
     configure: '配置'
     copyright:
         message:
@@ -55,14 +55,14 @@ zh:
         other: '%{count} %{what}'
     creat:
         e:
-            d: 'Created at'
+            d: '创建于'
             record: '创建%{what}'
             this: '创建'
             requirement: 'A %{what} must be created from a %{whom}.'
-        ing: 'Creating %{what}'
+        ing: '创建 %{what}'
     delete:
         confirmation: '您确定吗?'
-        successful: ' %{what}删除成功'
+        successful: '%{what}删除成功'
         this: '删除'
     edit:
         ing:
@@ -78,16 +78,16 @@ zh:
         records: '发现%{what}'
         none:
             results: '没有找到结果!'
-            records: 'No %{what} were found.'
-            none: '无'
-    from: 'From %{where}'
+            records: '没有找到%{what}'
+            this: '无'
+    from: '从 %{where}'
     get: '获得%{what}'
     go: '前往'
     home:
         this: '主页'
         for: '%{what}的主页'
     id:
-        record: '%{what}的标示'
+        record: '%{what}ID'
         this:
             one: 'ID'
             other: 'IDs'
@@ -96,7 +96,7 @@ zh:
         chinese: '中文'
         dzongkha: '宗卡语'
         english: '英文'
-        tibetan: 'Tibetan'
+        tibetan: '藏文'
     list:
         ing:
             in: '在%{where}列出%{what}'
@@ -111,7 +111,7 @@ zh:
         none: '未发现媒体文件'
     member: '会员'
     more:
-        record: 'More %{what}'
+        record: '更多的 %{what}'
         this: '更多'
     name:
         for: '%{what}名称'
@@ -125,25 +125,25 @@ zh:
         under: '%{where}底下的新%{what}'
     options: '选择'
     or:
-        record: 'or %{what}'
+        record: '或%{what}'
         this: '或者'
     parent:
         of: '父代%{who}'
         this:
-            one: 'Parent'
-            other: 'Parents'
+            one: '父代'
+            other: '父代'
     primary:
-        this: 'Primary'
-        record: 'Primary %{what}'
+        this: '主要的'
+        record: '主要的 %{what}'
     results:
         next: '下一个'
         previous: '前一个'
     save: '保存%{what}'
     search:
-        advanced: 'Advanced Search'
-        begins: 'Starts with'
-        contains: 'Contains'
-        exactly: 'Exactly'
+        advanced: '高级搜索'
+        begins: '从--开始'
+        contains: '包含'
+        exactly: '正确的'
         full_text: '全文'
         record: '%{what}搜索'
         results: '搜索结果'
@@ -153,17 +153,17 @@ zh:
         record: '参见%{what}'
     select:
         all: '全选'
-        ing: 'Selecting %{what}'
-        record: 'Select %{what}'
-        relation: 'Select a %{what} to relate to %{whom}.'
-        this: 'Select'
-    set: 'Set %{what}'
+        ing: '选择%{what}'
+        record: '选择 %{what}'
+        relation: '选择与 %{whom}相关的 %{what}'
+        this: '选择'
+    set: '设置 %{what}'
     settings: '设置'
     sign:
         in: '登入'
         out: '登出'
     show:
-        record: 'Show %{what}'
+        record: '显示 %{what}'
         this: '显示'
     tibetan:
         script: '藏文字体'
@@ -171,7 +171,7 @@ zh:
     this:
         record: '这个%{what}'
         this: '这个'
-    to: 'To %{where}'
+    to: '至 %{where}'
     translat:
         e: '翻译'
         ion: '译文'
@@ -179,11 +179,11 @@ zh:
         this: '更新'
         d:
             record: '最后更新%{when}'
-            this: 'Updated at'
+            this: '更新于'
     url_for_reference: '参考URL地址'
     what_is: '%{what}是什么?'
     date:
-        order: [ :day, :month, :year ]
+        order: '[ :day, :month, :year ]'
         this:
-            one: 'date'
-        	other: 'dates'
+            one: '日期'
+            other: '日期'
