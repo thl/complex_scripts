@@ -1,4 +1,4 @@
-class LanguagesController < AclController
+class ComplexScripts::LanguagesController < AclController
   # GET /languages
   # GET /languages.xml
   def index
@@ -39,8 +39,8 @@ class LanguagesController < AclController
     respond_to do |format|
       if @language.save
         flash[:notice] = ts('new.successful', :what => ComplexScripts::Language.model_name.human.capitalize)
-        format.html { redirect_to language_url(@language) }
-        format.xml  { head :created, :location => language_url(@language) }
+        format.html { redirect_to complex_scripts_language_url(@language) }
+        format.xml  { head :created, :location => complex_scripts_language_url(@language) }
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @language.errors.to_xml }
@@ -56,7 +56,7 @@ class LanguagesController < AclController
     respond_to do |format|
       if @language.update_attributes(params[:language])
         flash[:notice] = ts('edit.successful', :what => ComplexScripts::Language.model_name.human.capitalize)
-        format.html { redirect_to language_url(@language) }
+        format.html { redirect_to complex_scripts_language_url(@language) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -71,7 +71,7 @@ class LanguagesController < AclController
     @language = ComplexScripts::Language.find(params[:id])
     @language.destroy
     respond_to do |format|
-      format.html { redirect_to languages_url }
+      format.html { redirect_to complex_scripts_languages_url }
       format.xml  { head :ok }
     end
   end
