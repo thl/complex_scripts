@@ -1,7 +1,6 @@
 module ComplexScripts
   module CoreExtensions # :nodoc:
     module String
-      
       # Takes a string and spans characters in predefined unicode ranges with xml:lang and class attribute with
       # language code (ISO 369-3) for easy rendering. Also converts characters outside ascii range into NCR.
       def span
@@ -37,7 +36,7 @@ module ComplexScripts
       
       # converts chars outside ascii range to NCR, but does not span. To be used in forms (buttons, drop-down
       # lists, etc.).
-      def encode
+      def e # encode
         return self if blank?
         unicode_message = self.mb_chars
         return_string = ""
@@ -54,7 +53,7 @@ module ComplexScripts
         end
         return_string.html_safe
       end      
-      alias :e :encode
+      #alias :e :encode
       
       def base_letter(lang_code = nil)
         word  = self.lstrip.mb_chars
@@ -102,25 +101,25 @@ module ComplexScripts
           end
           return '' if i==0
           i-=1
-  	    	i-=1 if word[i]=='-'
-  	    	i-=1 if (i>0 && word[i]=='w')
-  	    	# check to see if it is a subscript (y, r, l, w)
-  	    	if i>0
-  	    	  case word[i]
-	    	    when 'r', 'l' then i-=1
-	    	    when 'y'
-	    	      case word[i-1]
-    	        when '.' then return 'y'
-  	          when 'n' then return 'ny'
-	            else i-=1
-    	        end
-    	      end
-  	      end
-  	      i-=1 if word[i]=='+'
-  	      return word[i].to_s if i==0
-  	      case word[i]
-	        when 'h'
-	          case word[i-1]
+        	i-=1 if word[i]=='-'
+        	i-=1 if (i>0 && word[i]=='w')
+        	# check to see if it is a subscript (y, r, l, w)
+        	if i>0
+        	  case word[i]
+        	    when 'r', 'l' then i-=1
+        	    when 'y'
+        	      case word[i-1]
+      	        when '.' then return 'y'
+              when 'n' then return 'ny'
+                else i-=1
+      	        end
+      	      end
+          end
+          i-=1 if word[i]=='+'
+          return word[i].to_s if i==0
+          case word[i]
+            when 'h'
+              case word[i-1]
             when 'k', 'c', 't', 'p', 'z' then return word[i-1..i].to_s
             when '+' then return word[i-2].to_s
             when 's' then return i-2>=0 && word[i-2]=='t' ? 'tsh' : 'sh'
@@ -135,24 +134,24 @@ module ComplexScripts
           return word[0].to_s.html_safe
         end
       end
-            
+
       def is_tibetan_letter?
         self.mb_chars.ord.is_tibetan_letter?
       end
-      
+
       def is_tibetan_digit?
         self.mb_chars.ord.is_tibetan_digit?
       end
-      
+
       def syllable_counts
         syllable_positions.size
       end
-            
+
       def translate(options = {})
         I18n.translate(self, options)
       end
       alias :t :translate
-      
+
       def translate_and_span(options = {})
         self.translate(options).span
       end
@@ -162,13 +161,13 @@ module ComplexScripts
         self.translate(options).to_xs.html_safe
       end
       alias :te :translate_and_encode
-      
+
       def capitalize_first_letter
         self.blank? ? self : self[0..0].upcase + self[1...self.size]
       end
-      
+
       private
-      
+
       def syllable_positions
         codes = self.mb_chars.unpack("U*")
         positions = Array.new

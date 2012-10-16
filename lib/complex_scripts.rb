@@ -1,4 +1,23 @@
-# ComplexScripts
+require 'complex_scripts/engine'
+require 'locale_setup'
+require 'extensions/string_ext'
+require 'extensions/fixnum_ext'
+require 'extensions/ext_hooks'
+require 'extensions/helper_methods'
+require 'passive_record'
+
+# require 'patches/xml_builder_patch'
+# require 'patches/i18n_patch'
+
+ActionView::Base.send :include, ComplexScripts::HelperMethods
+ActionController::Base.send :include, ComplexScripts::HelperMethods
+
+ActionController::Base.send :include, LocaleSetup
+ActionController::Base.send :before_filter, :set_locale
+
+# I18n.load_path << File.join(File.dirname(__FILE__), 'config', 'locales')
+I18n.load_path += Dir[File.join(File.dirname(__FILE__), '..', 'config', 'locales', '**', '*.yml')]
+
 LANGUAGES = {:en => {:locale => 'eng-US', :title => 'language.english'}, :ne => {:locale => 'nep-NP', :title => 'language.nepali', :unicode_range => [2304, 2431]}, :bo => {:title => 'language.tibetan', :locale => 'bod-CN', :unicode_range => [3840, 4095]}, :dz => {:locale => 'dzo-BT', :title => 'language.dzongkha'}, :zh => {:locale => 'zho-CN', :title => 'language.chinese'}}
 unicode_ranges = Array.new
 LANGUAGES.each do |key, value|
