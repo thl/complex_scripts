@@ -1,5 +1,4 @@
-ComplexScripts
-==============
+= ComplexScripts
 
 complex_scripts extends the Ruby's String class to provide additional methods for the proper display of complex scripts. Additionally,
 it also provides helper methods to be used within views.
@@ -7,9 +6,13 @@ it also provides helper methods to be used within views.
 Installation
 ============
 
-To install run:
+To install add to the Gemfile of the project:
 
-script/plugin install -x http://ndlb.svn.sourceforge.net/svnroot/ndlb/portal/ror/plugins/complex_scripts/trunk/
+gem 'complex_scripts', '2.0.1', :git => 'https://github.com/thl/complex_scripts.git', :tag => 'v2.0.1'
+
+and add to the main app's assets/stylesheets/application.css :
+
+*= require complex_scripts/application
 
 The String methods added are:
 
