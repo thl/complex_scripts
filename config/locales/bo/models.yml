@@ -5,7 +5,7 @@ bo:
         models:
             complex_scripts/language:
                 one: 'སྐད་བརྡ།'
-                other: 'སྐད་བརྡ་དག'
+                other: 'སྐད་བརྡ་དག་'
         # Attribute names will be titleized.:
         attributes:
             complex_scripts/language:

@@ -10,7 +10,7 @@ bo:
     all:
         records: '%{what}ཐམས་ཅད།'
         these: 'ཐམས་ཅད།'
-    another: '%{what}གཞན་ཞིག'
+    another: '%{what}གཞན་ཞིག་'
     application: 'ཉེར་སྤྱོད་བྱ་རིམ།'
     associate:
         d:
@@ -25,7 +25,7 @@ bo:
         other: 'རྩོམ་པ་པོ་རྣམས།'
     available: 'ཐོབ་ནུས་པའི%{what}'
     back:
-        this: 'ཕྱིར་ལོག'
+        this: 'ཕྱིར་ལོག་'
         to: '%{what}རུ་ཕྱིར་ལོག་པ།'
         to_in: '%{where}རུ་ཕྱིར་ལོག་ནས་%{what}གྱུར་པ།'
     browse:
@@ -39,11 +39,11 @@ bo:
         record: 'བཟོ་བཅོས %{what}'
         this:
             one: 'བཟོ་བཅོས།'
-            other: 'བཟོ་བཅོས་བྱས་པ་དག'
+            other: 'བཟོ་བཅོས་བྱས་པ་དག་'
     child:
         one: 'བྱིས་པ།'
-        other: 'བྱིས་པ་དག'
-    configure: 'སྡེབ་སྒྲིག'
+        other: 'བྱིས་པ་དག་'
+    configure: 'སྡེབ་སྒྲིག་'
     copyright:
         message:
             provider: '%{what}འདི་%{whom}ཡི་མཁོ་སྤྲོད་བྱས།'
@@ -66,11 +66,11 @@ bo:
         this: 'སུབ་པ།'
     edit:
         ing:
-            record: '%{what}རྩོམ་སྒྲིག'
-            this: 'རྩོམ་སྒྲིག'
+            record: '%{what}རྩོམ་སྒྲིག་'
+            this: 'རྩོམ་སྒྲིག་'
         failure: 'ནོར་འཁྲུལ་གསར་སྒྱུར%{what}'
-        record: '%{what}རྩོམ་སྒྲིག'
-        this: 'རྩོམ་སྒྲིག'
+        record: '%{what}རྩོམ་སྒྲིག་'
+        this: 'རྩོམ་སྒྲིག་'
         successful: '%{what}གསར་སྒྱུར་ལེགས་འགྲུབ་བྱུང་།'
     execute: 'ལག་བསྟར།'
     for: '%{whom}ཡི་%{what}'
@@ -93,10 +93,10 @@ bo:
             other: 'IDs'
     in: '%{where}རུགནས་པ་ཡི%{what}'
     language:
-        chinese: 'རྒྱ་ཡིག'
+        chinese: 'རྒྱ་ཡིག་'
         dzongkha: 'ཙོང་ཁའི་སྐད་བརྡ།'
-        english: 'དབྱིན་ཡིག'
-        tibetan: 'བོད་ཡིག'
+        english: 'དབྱིན་ཡིག་'
+        tibetan: 'བོད་ཡིག་'
     list:
         ing:
             in: '%{where}རུ་%{what}བཀྲམ་པ།'
@@ -106,7 +106,7 @@ bo:
         record: '%{what}དོ་དམ་བྱེད་པ།'
         this: 'དོ་དམ།'
     master: '%{what}ཚོད་འཛིན།'
-    material: 'དཔྱད་ཡིག'
+    material: 'དཔྱད་ཡིག་'
     media:
         none: 'སྨྱན་གཟུགས་ཡིག་ཆ་མ་མཐོང་།'
     member: 'ཚོགས་མི།'
@@ -131,7 +131,7 @@ bo:
         of: 'ཕ་ཚབ་%{who}'
         this:
             one: 'ཕ་ཚབ་'
-            other: 'རྩིས་སྤྲོད་བྱས་པ་དག'
+            other: 'རྩིས་སྤྲོད་བྱས་པ་དག་'
     primary:
         this: 'གཙོ་བོའི།'
         record: 'གཙོ་བོའི་ %{what}'
@@ -142,7 +142,7 @@ bo:
     search:
         advanced: 'རིམ་པ་མཐོ་བའི་བཤེར་འཚོལ།'
         begins: 'འགོ་འཛུག་མ་ཐག་ནས།'
-        contains: 'ཁོངས་སུ་གཏོགས་པ་དག'
+        contains: 'ཁོངས་སུ་གཏོགས་པ་དག་'
         exactly: 'འགྲིག་པའི།'
         full_text: 'རྩོམ་ཡིག་ཧྲིལ་པོ།'
         record: '%{what}བཤེར་འཚོལ།'
@@ -160,7 +160,7 @@ bo:
     set: '%{what} གསར་འཛུགས་བྱས་པ།'
     settings: 'སྒྲིག་འགོད།'
     sign:
-        in: 'ནང་འཇུག'
+        in: 'ནང་འཇུག་'
         out: 'ཕྱིར་ཐོན།'
     show:
         record: '%{what}  གསལ་པོར་མཚོན་པ།'
@@ -186,4 +186,4 @@ bo:
         order: '[ :day, :month, :year ]'
         this:
             one: 'ཚེས་གྲངས།'
-            other: 'ཚེས་གྲངས་ཁག'
+            other: 'ཚེས་གྲངས་ཁག་'

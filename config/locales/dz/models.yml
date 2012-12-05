@@ -4,7 +4,7 @@ dz:
         # Model names will be kept in lower case. Invoke .capitalize or .titleize if you need them in uppercase.
         models:
             complex_scripts/language:
-                one: 'སྐད་ཡིག'
+                one: 'སྐད་ཡིག་'
                 other: 'སྐད་ཡིག་ཚུ།'
         # Attribute names will be titleized.:
         attributes:

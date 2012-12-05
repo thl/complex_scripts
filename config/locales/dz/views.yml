@@ -69,8 +69,8 @@ dz:
             record: '%{what} ཞུན་དག་འབད་དོ།'
             this: 'ཞུན་དག་འབད་དོ།'
         failure: ' %{what} ཞུན་དག་འབད་བའི་སྐབས་ལུ་འཛོལ་བ།'
-        record: '%{what} ཞུན་དག'
-        this: 'ཞུན་དག'
+        record: '%{what} ཞུན་དག་'
+        this: 'ཞུན་དག་'
         successful: '%{what} མཐར་འཁྱོལ་ཅན་སྦེ་དུས་མཐུན་བཟོ་ཡོདཔ།'
     execute: 'ལག་ལེན་འཐབ།'
     for: '%{whom} དོན་ལུ་ %{what}'
@@ -84,8 +84,8 @@ dz:
     get: '%{what} ལེན།'
     go: 'འགྱོ།'
     home:
-        this: 'མ་ཤོག'
-        for: '%{what} མ་ཤོག'
+        this: 'མ་ཤོག་'
+        for: '%{what} མ་ཤོག་'
     id:
         record: '%{what} ཨའི་ཌི།'
         this:
@@ -166,7 +166,7 @@ dz:
         record: 'Show %{what}'
         this: 'སྟོན།'
     tibetan:
-        script: 'བོད་ཡིག'
+        script: 'བོད་ཡིག་'
         transliteration: 'བོད་ཡིག་ཕབ་བསྒྱུར།'
     this:
         record: '%{what} འདི།'
