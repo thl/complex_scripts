@@ -183,7 +183,6 @@ bo:
     url_for_reference: 'དཔྱད་གཞི་URLཡི་གནས།'
     what_is: '%{what}ནི ་ཅི།'
     date:
-        order: '[ :day, :month, :year ]'
         this:
             one: 'ཚེས་གྲངས།'
             other: 'ཚེས་གྲངས་ཁག་'

@@ -183,7 +183,6 @@ zh:
     url_for_reference: '参考URL地址'
     what_is: '%{what}是什么?'
     date:
-        order: '[ :day, :month, :year ]'
         this:
             one: '日期'
             other: '日期'
