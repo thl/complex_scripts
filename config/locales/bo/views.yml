@@ -32,6 +32,8 @@ bo:
         by: '%{what} %{whom}མིག་བཤར།'
         records: '%{what}མིག་བཤར།'
         this: 'མིག་བཤར།'
+    by:
+        record: 'by %{whom}'
     cancel:
         record: '%{what}འདོར་བ།'
         this: 'འདོར་བ།'

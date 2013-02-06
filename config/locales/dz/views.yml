@@ -32,6 +32,8 @@ dz:
         by: '%{whom} %{what} བརྡ་འཚོལ་འབད།'
         records: '%{what} བརྡ་འཚོལ་འབད།'
         this: 'བརྡ་འཚོལ་འབད།'
+    by:
+        record: 'by %{whom}'
     cancel:
         record: '%{what} ཆ་མེད་གཏང་།'
         this: 'ཆ་མེད་གཏང་།'

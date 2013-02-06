@@ -32,6 +32,8 @@ en:
         by: 'Browse %{what} %{whom}'
         records: 'Browse %{what}'
         this: 'Browse'
+    by:
+        record: 'by %{whom}'
     cancel:
         record: 'Cancel %{what}'
         this: 'Cancel'
