@@ -33,7 +33,7 @@ zh:
         records: '浏览%{what} '
         this: '浏览'
     by:
-        record: '由{{whom}}'
+        record: '由%{whom}'
     cancel:
         record: '取消%{what} '
         this: '取消'

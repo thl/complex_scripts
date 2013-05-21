@@ -33,7 +33,7 @@ bo:
         records: '%{what}མིག་བཤར།'
         this: 'མིག་བཤར།'
     by:
-        record: '{{whom}}ནས།'
+        record: '%{whom}ནས།'
     cancel:
         record: '%{what}འདོར་བ།'
         this: 'འདོར་བ།'
