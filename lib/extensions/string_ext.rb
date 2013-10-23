@@ -165,7 +165,11 @@ module ComplexScripts
       def capitalize_first_letter
         self.blank? ? self : self[0..0].upcase + self[1...self.size]
       end
-
+      
+      def strip_tags
+        Hpricot.uxs(HTML::FullSanitizer.new.sanitize(self, :tags=>[]))
+      end
+      
       private
 
       def syllable_positions
