@@ -5,7 +5,7 @@
 	 language_metadata = LANGUAGES[language]
      lang_title = language_metadata.nil? ? language.to_s : ts(language_metadata[:title], :locale => language)
      if language==current_language
-       languages << "<i>#{lang_title}</i>"
+       languages << lang_title
      else
        languages << link_to(lang_title, complex_scripts_change_language_path(language))
      end
