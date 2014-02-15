@@ -5,11 +5,10 @@ module ComplexScripts
       # language code (ISO 369-3) for easy rendering. Also converts characters outside ascii range into NCR.
       def span
         return self if blank?
-        unicode_message = self.mb_chars
         return_string = ""
         i=0
-        while i<unicode_message.length
-          ch = unicode_message[i]
+        while i<self.size
+          ch = self[i]
           ch_code = ch.ord
           if ch_code<=255
             return_string << ch
@@ -20,7 +19,7 @@ module ComplexScripts
             else
               lang_code = UNICODE_RANGES[range][2]
               return_string << "<span lang=\"#{lang_code}\" xml:lang=\"#{lang_code}\" class=\"#{lang_code}\">"
-              while i<unicode_message.length && range==ComplexScripts.character_within_unicode_range(ch_code=unicode_message[i].ord)
+              while i<self.size && range==ComplexScripts.character_within_unicode_range(ch_code=self[i].ord)
                 return_string << "&##{ch_code};"
                 i+=1
               end
@@ -38,11 +37,10 @@ module ComplexScripts
       # lists, etc.).
       def e # encode
         return self if blank?
-        unicode_message = self.mb_chars
         return_string = ""
         i=0
-        while i<unicode_message.length
-          ch = unicode_message[i]
+        while i<self.size
+          ch = self[i]
           ch_code = ch.ord 
           if ch_code<=255
             return_string << ch
@@ -56,21 +54,21 @@ module ComplexScripts
       #alias :e :encode
       
       def base_letter(lang_code = nil)
-        word  = self.lstrip.mb_chars
+        word  = self.lstrip
         return nil if word.blank?
         case lang_code
         when 'jee', 'wme', 'san'
-          letter = word.to(3)
+          letter = word[3]
           letter = letter.gsub(/-|=|_|\?|\/|\^|\342\211\241|\302\271|\302\262|\050/,'').lstrip.downcase # get rid of garbage that may precede head term
           return nil if letter.empty?
-          return letter.to_s if letter.size==1
-          if letter.at(1)=='h' && !"aeiou\304\201\305\253".include?(letter.at(0)) # last vowels are LATIN SMALL LETTER U WITH MACRON and LATIN SMALL LETTER A WITH MACRON
-            letter = letter.to(1)
+          return letter if letter.size==1
+          if letter[1]=='h' && !"aeiou\304\201\305\253".include?(letter[0]) # last vowels are LATIN SMALL LETTER U WITH MACRON and LATIN SMALL LETTER A WITH MACRON
+            letter = letter[1]
           else
-            letter = letter.at(0)
+            letter = letter[0]
           end
           #exceptions
-          case letter.at(0)
+          case letter[0]
           when "\303\230"
             return "\303\270" # LATIN CAPITAL LETTER O WITH STROKE -> SMALL
           when "\306\206"
@@ -90,7 +88,7 @@ module ComplexScripts
           when "\356\242\273"
             return "\?" # ?
           else
-            return letter.to_s
+            return letter
           end
         when 'bod' # only works with wylie
           word = word.downcase
@@ -116,12 +114,12 @@ module ComplexScripts
       	      end
           end
           i-=1 if word[i]=='+'
-          return word[i].to_s if i==0
+          return word[i] if i==0
           case word[i]
             when 'h'
               case word[i-1]
-            when 'k', 'c', 't', 'p', 'z' then return word[i-1..i].to_s
-            when '+' then return word[i-2].to_s
+            when 'k', 'c', 't', 'p', 'z' then return word[i-1..i]
+            when '+' then return word[i-2]
             when 's' then return i-2>=0 && word[i-2]=='t' ? 'tsh' : 'sh'
             else return 'h'
             end
@@ -129,18 +127,18 @@ module ComplexScripts
           when 'g' then return word[i-1]=='n' ? 'ng' : 'g'
           when 'z' then return word[i-1]=='d' ? 'dz' : 'z'
           end
-          return word[i].to_s.html_safe
+          return word[i].html_safe
         else
-          return word[0].to_s.html_safe
+          return word[0].html_safe
         end
       end
 
       def is_tibetan_letter?
-        self.mb_chars.ord.is_tibetan_letter?
+        self.ord.is_tibetan_letter?
       end
 
       def is_tibetan_digit?
-        self.mb_chars.ord.is_tibetan_digit?
+        self.ord.is_tibetan_digit?
       end
 
       def syllable_counts
@@ -173,7 +171,7 @@ module ComplexScripts
       private
 
       def syllable_positions
-        codes = self.mb_chars.unpack("U*")
+        codes = self.codepoints
         positions = Array.new
         original_size = codes.size
         code = codes.shift

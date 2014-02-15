@@ -16,7 +16,7 @@ ActionController::Base.send :include, LocaleSetup
 ActionController::Base.send :before_filter, :set_locale
 
 # I18n.load_path << File.join(File.dirname(__FILE__), 'config', 'locales')
-I18n.load_path += Dir[File.join(File.dirname(__FILE__), '..', 'config', 'locales', '**', '*.yml')]
+I18n.load_path += Dir[File.join(__dir__, '..', 'config', 'locales', '**', '*.yml')]
 
 LANGUAGES = {:en => {:locale => 'eng-US', :title => 'language.english'}, :ne => {:locale => 'nep-NP', :title => 'language.nepali', :unicode_range => [2304, 2431]}, :bo => {:title => 'language.tibetan', :locale => 'bod-CN', :unicode_range => [3840, 4095]}, :dz => {:locale => 'dzo-BT', :title => 'language.dzongkha'}, :zh => {:locale => 'zho-CN', :title => 'language.chinese'}}
 unicode_ranges = Array.new
