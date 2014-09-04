@@ -35,7 +35,8 @@ module ComplexScripts
     end
 
     def globalized_submit_tag(name, options = Hash.new)
-      options[:disable_with] = 'Processing...'
+      options[:data] = Hash.new if options[:data].nil?
+      options[:data][:disable_with] = 'Processing...'
       submit_tag te(name), language_options(options)
     end
 
@@ -67,7 +68,7 @@ module ComplexScripts
     alias :ts :translate_and_span
 
     def translate_and_encode(key, options = {})
-      translate(key, options).to_xs.html_safe
+      translate(key, options).encode(:xml => :text).gsub(/[^\u0000-\u007F]/) {|c| "&##{c.ord};"}.html_safe
     end
     alias :te :translate_and_encode    
   end

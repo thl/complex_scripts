@@ -35,7 +35,7 @@ module ComplexScripts
     # POST /languages
     # POST /languages.xml
     def create
-      @language = Language.new(params[:language])
+      @language = Language.new(language_params)
 
       respond_to do |format|
         if @language.save
@@ -55,7 +55,7 @@ module ComplexScripts
       @language = Language.find(params[:id])
 
       respond_to do |format|
-        if @language.update_attributes(params[:language])
+        if @language.update_attributes(language_params)
           flash[:notice] = ts('edit.successful', :what => Language.model_name.human.capitalize)
           format.html { redirect_to authenticated_system_language_url(@language) }
           format.xml  { head :ok }
@@ -75,6 +75,12 @@ module ComplexScripts
         format.html { redirect_to authenticated_system_languages_url }
         format.xml  { head :ok }
       end
+    end
+    
+    private
+    
+    def language_params
+      params.require(:language).permit(:title, :code, :locale, :use_for_interface, :unicode_codepoint_start, :unicode_codepoint_end)
     end
   end
 end

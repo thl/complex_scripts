@@ -7,11 +7,11 @@
 	 <th><%= ts(:unicode_range) %></th>
      <th><%= ComplexScripts::Language.human_attribute_name(:use_for_interface).s %>?</th>
    </tr>
-<% can_edit = authorized? hash_for_edit_complex_scripts_language_path
-   for language in @languages %>
+<% for language in @languages %>
    <tr>
      <td>
-<%   if can_edit %>
+<%   path = edit_complex_scripts_language_path(language)
+     if authorized? path %>
 <%=    link_to h(language.title), edit_complex_scripts_language_path(language) %>
 <%   else %>
 <%=    link_to h(language.title), complex_scripts_language_path(language) %>
@@ -25,8 +25,9 @@
 <% end %>
 </table>
 <p>&nbsp;<br/>
-<% if authorized? hash_for_new_complex_scripts_language_path %>
-<%=  link_to ts('new.record', :what => ComplexScripts::Language.model_name.human), new_complex_scripts_language_path %> |
+<% path = new_complex_scripts_language_path
+   if authorized? path %>
+<%=  link_to ts('new.record', :what => ComplexScripts::Language.model_name.human), path %> |
 <% end %>
 <%= link_to ts('back.to', :what => t('home.this')), root_path %>
 </p>

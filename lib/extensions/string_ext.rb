@@ -156,7 +156,7 @@ module ComplexScripts
       alias :ts :translate_and_span
 
       def translate_and_encode(options = {})
-        self.translate(options).to_xs.html_safe
+        self.translate(options).encode(:xml => :text).gsub(/[^\u0000-\u007F]/) {|c| "&##{c.ord};"}.html_safe
       end
       alias :te :translate_and_encode
 

@@ -14,8 +14,6 @@
 
 module ComplexScripts
   class Language < ActiveRecord::Base
-    attr_accessible :title, :code, :locale, :use_for_interface, :unicode_codepoint_start, :unicode_codepoint_end
-
     validates_presence_of :title
     has_many :captions, :dependent => :nullify
     has_many :descriptions, :dependent => :nullify

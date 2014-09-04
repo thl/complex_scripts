@@ -13,7 +13,7 @@ ActionView::Base.send :include, ComplexScripts::HelperMethods
 ActionController::Base.send :include, ComplexScripts::HelperMethods
 
 ActionController::Base.send :include, LocaleSetup
-ActionController::Base.send :before_filter, :set_locale
+ActionController::Base.send :before_action, :set_locale
 
 # I18n.load_path << File.join(File.dirname(__FILE__), 'config', 'locales')
 I18n.load_path += Dir[File.join(__dir__, '..', 'config', 'locales', '**', '*.yml')]
@@ -37,7 +37,7 @@ module ComplexScripts
   end
   
   def ComplexScripts.update_model_translation(model, attribs, languages)
-    model.find(:all).each do |record|
+    model.all.each do |record|
       attribs.each do |attrib|
         value = record[attrib]
         values = Hash.new
@@ -56,7 +56,7 @@ module ComplexScripts
   end
   
   def ComplexScripts.undo_model_translation(model, attribs, languages)
-    model.find(:all).each do |record|
+    model.all.each do |record|
       attribs.each do |attrib|
         languages.each do |language|
           model.locale = language
