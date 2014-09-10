@@ -48,7 +48,7 @@ module ComplexScripts
     end
 
     def self.find_iso_code(language)
-      Language.where(['LEFT(code, 2) = ?', language.to_s]).first
+      Language.find_by(['LEFT(code, 2) = ?', language.to_s])
     end
   end
 end
