@@ -1,5 +1,5 @@
 <%  path = complex_scripts_language_path(@language)
-    if authorized?(Rails.application.routes.recognize_path(path).merge(:action => 'destroy')) %>
+    if authorized?(path, :action => 'destroy') %>
 <%=   link_to ts('delete.this'), path, method: :delete, data: { confirm: te('delete.confirmation') } %> |
 <%  end %>
 <%= link_to ts('back.to', :what => t('all.records', :what => ComplexScripts::Language.model_name.human(:count => :many))), complex_scripts_languages_path %> |
