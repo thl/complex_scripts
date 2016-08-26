@@ -18,6 +18,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 4.0"
   s.add_dependency 'passiverecord', '0.2'
+  s.add_dependency 'hpricot' #, '>= 0.8.6'
   
   # s.add_dependency "jquery-rails"
 
