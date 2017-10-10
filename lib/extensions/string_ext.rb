@@ -165,7 +165,7 @@ module ComplexScripts
       end
       
       def strip_tags
-        Hpricot.uxs(HTML::FullSanitizer.new.sanitize(self, :tags=>[]))
+        Hpricot.uxs(Rails::Html::FullSanitizer.new.sanitize(self, :tags=>[]))
       end
       
       private
