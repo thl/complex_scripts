@@ -6,7 +6,7 @@ source "http://rubygems.org"
 gemspec
 
 # jquery-rails is used by the dummy application
-gem "jquery-rails"
+gem 'jquery-rails', '>= 3.1.3'
 gem 'passiverecord', '0.2', :git => 'https://github.com/ambethia/passiverecord.git'
 
 # Declare any dependencies that are still in development here instead of in
