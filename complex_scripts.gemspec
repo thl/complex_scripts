@@ -21,6 +21,4 @@ Gem::Specification.new do |s|
   s.add_dependency 'hpricot' #, '>= 0.8.6'
   
   # s.add_dependency "jquery-rails"
-
-  s.add_development_dependency "sqlite3"
 end
