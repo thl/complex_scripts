@@ -5,6 +5,7 @@ require 'extensions/fixnum_ext'
 require 'extensions/ext_hooks'
 require 'extensions/helper_methods'
 require 'passive_record'
+require 'unicode'
 
 # require 'patches/xml_builder_patch'
 # require 'patches/i18n_patch'

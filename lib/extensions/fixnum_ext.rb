@@ -1,7 +1,7 @@
 module ComplexScripts
   module CoreExtensions # :nodoc:
     module Fixnum
-      VOWELS = [97, 101, 105, 111, 117]
+      VOWELS = [97, 101, 105, 111, 117, 65, 69, 73, 79, 85]
       def is_tibetan_letter?
         self >= 3904 && self <= 4035
       end

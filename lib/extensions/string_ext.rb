@@ -133,6 +133,29 @@ module ComplexScripts
         end
       end
 
+      def prefixed_letters(lang_code = nil)
+        zero_width_space = Unicode::UFEFF
+        word  = self.lstrip.gsub(zero_width_space,'')
+        return nil if word.blank?
+        case lang_code
+        when 'bod' # only works with wylie
+          i = 0
+          until word[i].ord.is_vowel?
+            i+=1
+            return nil if i>=word.size
+          end
+          prefix = word[0...i]
+          if prefix==self.base_letter('bod')
+            return i<word.size && word[i+1].ord.is_vowel? ? word[0..i+1].html_safe : word[0..i].html_safe
+          else
+            return (prefix+'a').html_safe
+          end
+          #return word[0..i].html_safe
+        else
+          return word[0].html_safe
+        end
+      end
+
       def is_tibetan_letter?
         self.ord.is_tibetan_letter?
       end
