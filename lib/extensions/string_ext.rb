@@ -146,7 +146,7 @@ module ComplexScripts
           end
           prefix = word[0...i]
           if prefix==self.base_letter('bod')
-            return i<word.size && word[i+1].ord.is_vowel? ? word[0..i+1].html_safe : word[0..i].html_safe
+            return i+1<word.size && word[i+1].ord.is_vowel? ? word[0..i+1].html_safe : word[0..i].html_safe
           else
             return (prefix+'a').html_safe
           end
