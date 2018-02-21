@@ -132,6 +132,13 @@ module ComplexScripts
           return word[0].html_safe
         end
       end
+      
+      def tibetan_base_letter
+        pos = self.chars.find_index{|l| l.ord.subjoined_letter? }
+        return self[pos].ord.root_of_subjoined_letter.unicode if !pos.nil?
+        pos = self.chars.find_index{|l| l.ord.is_subfix? }
+        pos.nil? || pos==0 ? nil : self[pos-1]
+      end
 
       def prefixed_letters(lang_code = nil)
         zero_width_space = Unicode::UFEFF
