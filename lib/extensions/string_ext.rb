@@ -13,13 +13,12 @@ module ComplexScripts
           if ch_code<=255
             return_string << ch
           else
-            range = ComplexScripts.character_within_unicode_range(ch_code)
-            if range.nil?
+            lang_code = ch_code.language_code
+            if lang_code.nil?
               return_string << "&##{ch_code};"
             else
-              lang_code = UNICODE_RANGES[range][2]
               return_string << "<span lang=\"#{lang_code}\" xml:lang=\"#{lang_code}\" class=\"#{lang_code}\">"
-              while i<self.size && range==ComplexScripts.character_within_unicode_range(ch_code=self[i].ord)
+              while i<self.size && (ch_code = self[i].ord).language_code==lang_code
                 return_string << "&##{ch_code};"
                 i+=1
               end

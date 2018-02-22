@@ -79,6 +79,11 @@ module ComplexScripts
         else nil
         end
       end
+      
+      def language_code
+        range = ComplexScripts.character_within_unicode_range(self)
+        range.nil? ? nil : UNICODE_RANGES[range][2]
+      end
     end
   end
 end
