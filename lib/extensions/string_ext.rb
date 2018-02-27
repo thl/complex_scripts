@@ -197,6 +197,17 @@ module ComplexScripts
         Hpricot.uxs(Rails::Html::FullSanitizer.new.sanitize(self, :tags=>[]))
       end
       
+      def language_code
+        spaces = [Unicode::UFEFF, Unicode::U00A0, ' ']
+        s = self.strip_tags
+        s.lstrip!
+        while s.size>0 && spaces.include?(s.first)
+          s.slice!(0)
+        end
+        ch = s.first
+        ch.nil? ? nil : ch.ord.language_code
+      end
+      
       private
 
       def syllable_positions
