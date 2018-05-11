@@ -1,6 +1,11 @@
 module ComplexScripts
   module CoreExtensions # :nodoc:
     module String
+      SPACE = ' '
+      NB_SPACE = Unicode::U00A0
+      SHAD = Unicode::U0F0D
+      ZERO_WIDTH_SPACE = Unicode::UFEFF
+      
       # Takes a string and spans characters in predefined unicode ranges with xml:lang and class attribute with
       # language code (ISO 369-3) for easy rendering. Also converts characters outside ascii range into NCR.
       def span
@@ -168,6 +173,19 @@ module ComplexScripts
 
       def is_tibetan_digit?
         self.ord.is_tibetan_digit?
+      end
+      
+      def tibetan_cleanup
+        term = self.strip
+        term.gsub!(SPACE, NB_SPACE)
+        term.gsub!(SHAD, '')
+        term.slice!(0) if term.first == ZERO_WIDTH_SPACE
+        last = term.last
+        while last.ord.is_tibetan_punctuation? || last==SPACE || last==NB_SPACE
+          term.chop!
+          last = term.last
+        end
+        term
       end
 
       def syllable_counts
