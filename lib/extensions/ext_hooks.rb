@@ -4,6 +4,6 @@ class ::String # :nodoc:
   include ComplexScripts::CoreExtensions::String
 end
 
-class ::Fixnum
-  include ComplexScripts::CoreExtensions::Fixnum
+class ::Integer
+  include ComplexScripts::CoreExtensions::Integer
 end

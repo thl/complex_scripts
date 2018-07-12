@@ -1,6 +1,6 @@
 module ComplexScripts
   module CoreExtensions # :nodoc:
-    module Fixnum
+    module Integer
       VOWELS = [97, 101, 105, 111, 117, 65, 69, 73, 79, 85]
       SECONDARY_SUFFIXES = [3942, 3921] #sa, da
       SUFFIXES = [3906, 3908, 3921, 3923, 3926, 3928, 3936, 3938, 3939, 3942] #ga, nga, da, na, ba, ma, 'a, ra, la, sa
