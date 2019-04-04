@@ -6,6 +6,11 @@ module ComplexScripts
       SHAD = Unicode::U0F0D
       ZERO_WIDTH_SPACE = Unicode::UFEFF
       
+      def bo_compare(b)
+        @@collator ||= BoCollator.new('bo')
+        @@collator.compare self, b.to_s
+      end
+
       # Takes a string and spans characters in predefined unicode ranges with xml:lang and class attribute with
       # language code (ISO 369-3) for easy rendering. Also converts characters outside ascii range into NCR.
       def span
