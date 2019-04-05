@@ -9,11 +9,11 @@
 /db/*.sqlite3-journal
 /public/system
 /coverage/
-/spec/tmp
 **.orig
 rerun.txt
 pickle-email-*.html
-
+/spec/tmp
+/spec/dummy/config/database.yml
 /spec/dummy/db/*.sqlite3
 /spec/dummy/db/*.sqlite3-journal
 /spec/dummy/log/*.log
