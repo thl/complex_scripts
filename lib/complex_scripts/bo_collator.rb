@@ -2,8 +2,8 @@ require 'ffi-icu'
 module ComplexScripts
   class BoCollator < ICU::Collation::Collator
     
-    def initialize(locale)
-      super
+    def initialize
+      super('bo')
     end
   end
 end

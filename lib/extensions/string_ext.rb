@@ -7,7 +7,7 @@ module ComplexScripts
       ZERO_WIDTH_SPACE = Unicode::UFEFF
       
       def bo_compare(b)
-        @@collator ||= BoCollator.new('bo')
+        @@collator ||= BoCollator.new
         @@collator.compare self, b.to_s
       end
 
