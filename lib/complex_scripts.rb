@@ -1,4 +1,5 @@
 require 'complex_scripts/engine'
+require 'complex_scripts/bo_collator'
 require 'locale_setup'
 require 'unicode'
 require 'extensions/string_ext'

@@ -1,6 +1,6 @@
-class CreateLanguages < ActiveRecord::Migration
+class CreateLanguages < ActiveRecord::Migration[4.2]
   def self.up
-    create_table :languages, :options => 'CHARACTER SET=utf8' do |t|
+    create_table :languages do |t|
       t.string :title, :limit => 100, :null => false
       t.string :code, :limit => 3, :null => false
       t.string :locale, :limit => 6, :null => false

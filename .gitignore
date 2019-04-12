@@ -1,2 +1,13 @@
 .DS_Store
-test/dummy/log/
+.rbenv-gemsets
+*.rbc
+.rspec
+.ruby-version
+.byebug_history
+*.log
+*.yml
+*.sqlite3
+*.sqlite3-journal
+*.orig
+tmp/
+/spec/dummy/.sass-cache

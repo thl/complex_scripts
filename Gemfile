@@ -8,6 +8,8 @@ gemspec
 # jquery-rails is used by the dummy application
 gem 'jquery-rails', '>= 3.1.3'
 gem 'passiverecord', '0.2', :git => 'https://github.com/ambethia/passiverecord.git'
+gem 'ffi-icu',       '0.2.0', github: 'shanti-uva/ffi-icu',        tag: 'v0.2.0' #path: '../../../shanti/ffi-icu'
+gem 'pg'
 
 # Declare any dependencies that are still in development here instead of in
 # your gemspec. These might include edge Rails or gems from your path or
@@ -16,3 +18,12 @@ gem 'passiverecord', '0.2', :git => 'https://github.com/ambethia/passiverecord.g
 
 # To use debugger
 # gem 'ruby-debug'
+group :development, :test do
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # Adds support for Capybara system testing and selenium driver
+  gem 'capybara', '~> 2.13'
+  gem 'selenium-webdriver'
+  gem 'pry-rails'
+  gem 'pry-byebug'
+end
