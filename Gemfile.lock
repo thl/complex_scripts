@@ -1,9 +1,9 @@
 GIT
-  remote: git://github.com/rderik/ffi-icu.git
-  revision: 43443a352c0b04f4b2773533336ecdf9e655e9f5
-  tag: v0.1.11
+  remote: git://github.com/shanti-uva/ffi-icu.git
+  revision: 6addcb1e54764c999686797cb8c82f494b3c4405
+  tag: v0.2.0
   specs:
-    ffi-icu (0.1.11)
+    ffi-icu (0.2.0)
       ffi (~> 1.0, >= 1.0.9)
 
 GIT
@@ -191,7 +191,7 @@ DEPENDENCIES
   byebug
   capybara (~> 2.13)
   complex_scripts!
-  ffi-icu (= 0.1.11)!
+  ffi-icu (= 0.2.0)!
   jquery-rails (>= 3.1.3)
   passiverecord (= 0.2)!
   pg
