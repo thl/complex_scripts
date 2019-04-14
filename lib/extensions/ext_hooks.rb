@@ -1,9 +1,2 @@
-# Hook up core extenstions (need to define them as main level, hence 
-# the :: prefix)
-class ::String # :nodoc:
-  include ComplexScripts::CoreExtensions::String
-end
-
-class ::Integer
-  include ComplexScripts::CoreExtensions::Integer
-end
+String.send :include, ComplexScripts::CoreExtensions::String
+Integer.send :include, ComplexScripts::CoreExtensions::Integer
