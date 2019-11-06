@@ -171,6 +171,20 @@ module ComplexScripts
           return word[0].html_safe
         end
       end
+      
+      def is_tibetan_word?
+        tibetan_letter_count = 0
+        non_tibetan_letter_count = 0
+        s = self.strip_tags.strip
+        s.each_char do |c|
+          if c.is_tibetan_letter?
+            tibetan_letter_count += 1
+          else
+            non_tibetan_letter_count += 1
+          end
+        end
+        tibetan_letter_count > non_tibetan_letter_count
+      end
 
       def is_tibetan_letter?
         self.ord.is_tibetan_letter?
