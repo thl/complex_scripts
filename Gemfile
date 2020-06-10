@@ -1,4 +1,5 @@
-source "http://rubygems.org"
+source "https://rubygems.org"
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # Declare your gem's dependencies in complex_scripts.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
@@ -6,7 +7,7 @@ source "http://rubygems.org"
 gemspec
 
 # jquery-rails is used by the dummy application
-gem 'jquery-rails', '>= 3.1.3'
+gem 'jquery-rails'
 gem 'passiverecord', '0.2', :git => 'https://github.com/ambethia/passiverecord.git'
 gem 'ffi-icu',       '0.2.0', github: 'shanti-uva/ffi-icu',        tag: 'v0.2.0' #path: '../../../shanti/ffi-icu'
 gem 'pg'
