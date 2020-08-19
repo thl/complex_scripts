@@ -8,7 +8,6 @@ gemspec
 
 # jquery-rails is used by the dummy application
 gem 'jquery-rails'
-gem 'passiverecord', '0.2', :git => 'https://github.com/ambethia/passiverecord.git'
 gem 'ffi-icu',       '0.2.0', github: 'shanti-uva/ffi-icu',        tag: 'v0.2.0' #path: '../../../shanti/ffi-icu'
 gem 'pg'
 

@@ -6,7 +6,6 @@ require 'extensions/string_ext'
 require 'extensions/integer_ext'
 require 'extensions/ext_hooks'
 require 'extensions/helper_methods'
-require 'passive_record'
 
 # require 'patches/xml_builder_patch'
 # require 'patches/i18n_patch'
