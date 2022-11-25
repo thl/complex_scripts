@@ -7,6 +7,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gemspec
 
 # jquery-rails is used by the dummy application
+gem 'rails', '~> 5.2.3'
 gem 'jquery-rails'
 gem 'ffi-icu',       '0.2.0', github: 'shanti-uva/ffi-icu',        tag: 'v0.2.0' #path: '../../../shanti/ffi-icu'
 gem 'pg'
