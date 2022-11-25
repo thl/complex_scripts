@@ -6,7 +6,7 @@ module ComplexScripts
       SUFFIXES = [3906, 3908, 3921, 3923, 3926, 3928, 3936, 3938, 3939, 3942] #ga, nga, da, na, ba, ma, 'a, ra, la, sa
       PREFIXES = [3906, 3921, 3926, 3928, 3936] #ga, da, ba, ma, 'a
       def is_tibetan_letter?
-        self >= 3904 && self <= 4035
+        self >= 3840 && self <= 4095
       end
       
       def is_tibetan_digit?
@@ -39,6 +39,14 @@ module ComplexScripts
       
       def is_tibetan_punctuation?
         self >= 3844 && self <= 3858
+      end
+      
+      def is_latin_punctuation?
+        self >= 32 && self <= 47 || self >= 58 && self <= 63 || self >= 91 && self <= 96 || self >= 123 && self <= 126
+      end
+      
+      def is_latin_digit?
+        self >= 48 && self <=57
       end
       
       def is_vowel?

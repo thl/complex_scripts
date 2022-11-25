@@ -179,7 +179,7 @@ module ComplexScripts
         s.each_char do |c|
           if c.is_tibetan_letter?
             tibetan_letter_count += 1
-          else
+          elsif !c.is_latin_punctuation? && !c.is_latin_digit?
             non_tibetan_letter_count += 1
           end
         end
@@ -192,6 +192,14 @@ module ComplexScripts
 
       def is_tibetan_digit?
         self.ord.is_tibetan_digit?
+      end
+      
+      def is_latin_punctuation?
+        self.ord.is_latin_punctuation?
+      end
+      
+      def is_latin_digit?
+        self.ord.is_latin_digit?
       end
       
       def tibetan_cleanup
