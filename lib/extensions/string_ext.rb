@@ -219,18 +219,18 @@ module ComplexScripts
         syllable_positions.size
       end
 
-      def translate(options = {})
-        I18n.translate(self, options)
+      def translate(**options)
+        I18n.translate(self, **options)
       end
       alias :t :translate
 
-      def translate_and_span(options = {})
-        self.translate(options).span
+      def translate_and_span(**options)
+        self.translate(**options).span
       end
       alias :ts :translate_and_span
 
-      def translate_and_encode(options = {})
-        self.translate(options).encode(:xml => :text).gsub(/[^\u0000-\u007F]/) {|c| "&##{c.ord};"}.html_safe
+      def translate_and_encode(**options)
+        self.translate(**options).encode(:xml => :text).gsub(/[^\u0000-\u007F]/) {|c| "&##{c.ord};"}.html_safe
       end
       alias :te :translate_and_encode
 

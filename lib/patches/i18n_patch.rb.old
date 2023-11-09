@@ -3,8 +3,8 @@ module I18n
     class Simple
       alias :old_translate :translate
       
-      def translate(locale, key, options = {})
-        old_translate locale, key, {:count => 1}.merge(options)
+      def translate(locale, key, **options)
+        old_translate locale, key, **{:count => 1}.merge(options)
       end
     end
   end

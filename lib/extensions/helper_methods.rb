@@ -16,7 +16,7 @@ module ComplexScripts
       !ComplexScripts.base_language?
     end
 
-    def language_options(options = Hash.new)
+    def language_options(**options)
       if not_base_language?
         language = I18n.locale
         options[:lang] = language
@@ -30,19 +30,19 @@ module ComplexScripts
       return options
     end
 
-    def language_options_string(options = Hash.new)
-      return language_options(options).collect{|key, value| "#{key}=\"#{value}\""}.join(' ')
+    def language_options_string(**options)
+      return language_options(**options).collect{|key, value| "#{key}=\"#{value}\""}.join(' ')
     end
 
-    def globalized_submit_tag(name, options = Hash.new)
+    def globalized_submit_tag(name, **options)
       options[:data] = Hash.new if options[:data].nil?
       options[:data][:disable_with] = 'Processing...'
-      submit_tag te(name), language_options(options)
+      submit_tag te(name), language_options(**options)
     end
 
     # Receives a language code as argument and returns a hash with keys xml:lang and class set to that code. If no code is
     # given, it defaults to "bo" (tibetan). This can be used to easily pass it to form helpers to be styled accordingly.
-    def fixed_language_options(options = Hash.new)
+    def fixed_language_options(**options)
       if options[:lang].nil?
         options[:lang] = 'bo'
       else
@@ -62,13 +62,13 @@ module ComplexScripts
       end
     end
 
-    def translate_and_span(key, options = {})
-      translate(key, options).span.html_safe
+    def translate_and_span(key, **options)
+      translate(key, **options).span.html_safe
     end
     alias :ts :translate_and_span
 
-    def translate_and_encode(key, options = {})
-      translate(key, options).encode(:xml => :text).gsub(/[^\u0000-\u007F]/) {|c| "&##{c.ord};"}.html_safe
+    def translate_and_encode(key, **options)
+      translate(key, **options).encode(:xml => :text).gsub(/[^\u0000-\u007F]/) {|c| "&##{c.ord};"}.html_safe
     end
     alias :te :translate_and_encode    
   end
