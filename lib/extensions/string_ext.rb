@@ -185,6 +185,20 @@ module ComplexScripts
         end
         tibetan_letter_count > non_tibetan_letter_count
       end
+      
+      def is_devanagari_word?
+        deva_letter_count = 0
+        non_deva_letter_count = 0
+        s = self.strip_tags.strip
+        s.each_char do |c|
+          if c.is_devanagari_letter?
+            deva_letter_count += 1
+          elsif !c.is_latin_punctuation? && !c.is_latin_digit?
+            non_deva_letter_count += 1
+          end
+        end
+        deva_letter_count > non_deva_letter_count
+      end
 
       def is_tibetan_letter?
         self.ord.is_tibetan_letter?
@@ -192,6 +206,10 @@ module ComplexScripts
 
       def is_tibetan_digit?
         self.ord.is_tibetan_digit?
+      end
+      
+      def is_devanagari_letter?
+        self.ord.is_devanagari_letter?
       end
       
       def is_latin_punctuation?
@@ -261,10 +279,10 @@ module ComplexScripts
         original_size = codes.size
         code = codes.shift
         while code
-          code = codes.shift while code && !code.is_tibetan_alphanumeric?
+          code = codes.shift while code && !code.is_tibetan_letter?
           break unless code
           start_pos = original_size - codes.size - 1
-          code = codes.shift while code && code.is_tibetan_alphanumeric?
+          code = codes.shift while code && code.is_tibetan_letter?
           end_pos = original_size - codes.size - 2
           positions << [start_pos, end_pos]
         end

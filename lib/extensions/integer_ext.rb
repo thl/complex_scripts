@@ -5,8 +5,9 @@ module ComplexScripts
       SECONDARY_SUFFIXES = [3942, 3921] #sa, da
       SUFFIXES = [3906, 3908, 3921, 3923, 3926, 3928, 3936, 3938, 3939, 3942] #ga, nga, da, na, ba, ma, 'a, ra, la, sa
       PREFIXES = [3906, 3921, 3926, 3928, 3936] #ga, da, ba, ma, 'a
+
       def is_tibetan_letter?
-        self >= 3840 && self <= 4095
+        self >= 3840 && self <= 4095 # self >= LANGUAGES[:bo][:unicode_range][0] && self <= LANGUAGES[:bo][:unicode_range][1]
       end
       
       def is_tibetan_digit?
@@ -15,6 +16,10 @@ module ComplexScripts
       
       def is_tibetan_single_letter?
         self >= 3904 && self <=3948
+      end
+      
+      def is_devanagari_letter?
+        self>=2304 && self<=2431 # self >= LANGUAGES[:ne][:unicode_range][0] && self <= LANGUAGES[:ne][:unicode_range][1]
       end
       
       def is_secondary_suffix?
@@ -31,10 +36,6 @@ module ComplexScripts
       
       def is_subfix?
         self>=4016 && self<=4019
-      end
-      
-      def is_tibetan_alphanumeric?
-        self.is_tibetan_letter? || self.is_tibetan_digit?
       end
       
       def is_tibetan_punctuation?
