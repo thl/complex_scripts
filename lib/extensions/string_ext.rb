@@ -4,6 +4,8 @@ module ComplexScripts
       SPACE = ' '
       NB_SPACE = Unicode::U00A0
       SHAD = Unicode::U0F0D
+      INTERSYLLABIC_TSHEG = Unicode::U0F0B
+      
       ZERO_WIDTH_SPACE = Unicode::UFEFF
       
       def bo_compare(b)
