@@ -5,6 +5,7 @@ module ComplexScripts
       NB_SPACE = Unicode::U00A0
       SHAD = Unicode::U0F0D
       INTERSYLLABIC_TSHEG = Unicode::U0F0B
+      DELIMITER_TSHEG = Unicode::U0F0C
       
       ZERO_WIDTH_SPACE = Unicode::UFEFF
       
