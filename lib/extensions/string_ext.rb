@@ -10,10 +10,15 @@ module ComplexScripts
       ZERO_WIDTH_SPACE = Unicode::UFEFF
       
       def bo_compare(b)
-        @@collator ||= BoCollator.new
-        @@collator.compare self, b.to_s
+        @@bo_collator ||= BoCollator.new
+        @@bo_collator.compare self, b.to_s
       end
-
+      
+      def new_compare(b)
+        @@new_collator ||= ICU::Collation::Collator.new('und-Deva') # also possible "sa" for sanskrit and "ne" for nepali.
+        @@new_collator.compare self, b.to_s
+      end
+      
       # Takes a string and spans characters in predefined unicode ranges with xml:lang and class attribute with
       # language code (ISO 369-3) for easy rendering. Also converts characters outside ascii range into NCR.
       def span
