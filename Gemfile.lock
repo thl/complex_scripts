@@ -9,9 +9,8 @@ GIT
 PATH
   remote: .
   specs:
-    complex_scripts (3.1.9)
-      hpricot
-      rails (>= 4.0)
+    complex_scripts (3.2.1)
+      rails
 
 GEM
   remote: https://rubygems.org/
@@ -114,7 +113,6 @@ GEM
     ffi (1.17.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
-    hpricot (0.8.6)
     i18n (1.14.5)
       concurrent-ruby (~> 1.0)
     io-console (0.7.2)
