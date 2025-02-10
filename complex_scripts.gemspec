@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'rails', '~> 7.1.0'
   s.add_development_dependency 'rspec-rails'
-  #s.add_dependency 'hpricot' #, '>= 0.8.6'
+  s.add_dependency 'hpricot' #, '>= 0.8.6'
   
   # s.add_dependency "jquery-rails"
 end

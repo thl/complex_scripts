@@ -11,6 +11,7 @@ gem 'rails'
 gem 'jquery-rails'
 gem 'ffi-icu',       '0.2.0', github: 'shanti-uva/ffi-icu',        tag: 'v0.2.0' #path: '../../../shanti/ffi-icu'
 gem 'pg'
+gem 'hpricot', github: 'ycorredius/hpricot'#, '>= 0.8.6'
 
 # Declare any dependencies that are still in development here instead of in
 # your gemspec. These might include edge Rails or gems from your path or

@@ -6,10 +6,17 @@ GIT
     ffi-icu (0.2.0)
       ffi (~> 1.0, >= 1.0.9)
 
+GIT
+  remote: https://github.com/ycorredius/hpricot.git
+  revision: 1eb086570a56514348a35402df0199d7652fd169
+  specs:
+    hpricot (0.8.7)
+
 PATH
   remote: .
   specs:
     complex_scripts (3.2.1)
+      hpricot
       rails (~> 7.1.0)
 
 GEM
@@ -261,6 +268,7 @@ DEPENDENCIES
   capybara (~> 2.13)
   complex_scripts!
   ffi-icu (= 0.2.0)!
+  hpricot!
   jquery-rails
   pg
   pry-byebug
