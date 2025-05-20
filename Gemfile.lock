@@ -15,7 +15,7 @@ GIT
 PATH
   remote: .
   specs:
-    complex_scripts (3.2.1)
+    complex_scripts (3.2.2)
       hpricot
       rails (~> 7.1.0)
 
@@ -147,10 +147,10 @@ GEM
     marcel (1.0.4)
     method_source (1.1.0)
     mini_mime (1.1.5)
-    mini_portile2 (2.8.8)
+    mini_portile2 (2.8.9)
     minitest (5.25.4)
     mutex_m (0.3.0)
-    net-imap (0.5.6)
+    net-imap (0.5.8)
       date
       net-protocol
     net-pop (0.1.2)
@@ -160,7 +160,7 @@ GEM
     net-smtp (0.5.1)
       net-protocol
     nio4r (2.7.4)
-    nokogiri (1.18.2)
+    nokogiri (1.18.8)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     pg (1.5.7)
@@ -180,7 +180,7 @@ GEM
       stringio
     public_suffix (5.1.1)
     racc (1.8.1)
-    rack (3.1.9)
+    rack (3.1.15)
     rack-session (2.1.0)
       base64 (>= 0.1.0)
       rack (>= 3.0.0)
