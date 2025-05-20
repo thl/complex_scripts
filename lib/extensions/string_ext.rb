@@ -7,8 +7,8 @@ module ComplexScripts
       INTERSYLLABIC_TSHEG = Unicode::U0F0B
       DELIMITER_TSHEG = Unicode::U0F0C
       
-      ZERO_WIDTH_SPACE = Unicode::UFEFF
-      
+      ZERO_WIDTH_NON_BREAK_SPACE = Unicode::UFEFF
+      ZERO_WIDTH_SPACE = Unicode::U200B
       def bo_compare(b)
         @@bo_collator ||= BoCollator.new
         @@bo_collator.compare self, b.to_s
@@ -232,7 +232,7 @@ module ComplexScripts
         term = self.strip
         term.gsub!(SPACE, NB_SPACE)
         term.gsub!(SHAD, '')
-        term.slice!(0) if term.first == ZERO_WIDTH_SPACE
+        term.slice!(0) if term.first == ZERO_WIDTH_NON_BREAK_SPACE
         last = term.last
         while last.ord.is_tibetan_punctuation? || last==SPACE || last==NB_SPACE
           term.chop!
