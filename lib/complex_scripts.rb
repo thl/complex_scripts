@@ -1,5 +1,6 @@
 require 'complex_scripts/engine'
 require 'complex_scripts/bo_collator'
+require 'complex_scripts/new_collator'
 require 'unicode'
 require 'extensions/string_ext'
 require 'extensions/integer_ext'

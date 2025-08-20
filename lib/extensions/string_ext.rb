@@ -15,7 +15,7 @@ module ComplexScripts
       end
       
       def new_compare(b)
-        @@new_collator ||= ICU::Collation::Collator.new('und-Deva') # also possible "sa" for sanskrit and "ne" for nepali.
+        @@new_collator ||= NewCollator.new
         @@new_collator.compare self, b.to_s
       end
       
