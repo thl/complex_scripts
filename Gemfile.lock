@@ -15,9 +15,9 @@ GIT
 PATH
   remote: .
   specs:
-    complex_scripts (3.2.3)
+    complex_scripts (3.2.4)
       hpricot
-      rails (~> 7.1.0)
+      rails
 
 GEM
   remote: https://rubygems.org/

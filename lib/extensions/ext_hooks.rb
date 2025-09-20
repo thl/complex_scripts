@@ -1,2 +1,2 @@
-String.send :include, ComplexScripts::CoreExtensions::String
-Integer.send :include, ComplexScripts::CoreExtensions::Integer
+::String.include ComplexScripts::CoreExtensions::String
+::Integer.include ComplexScripts::CoreExtensions::Integer
