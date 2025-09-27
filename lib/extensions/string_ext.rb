@@ -276,7 +276,7 @@ module ComplexScripts
           s.slice!(0)
         end
         ch = s.first
-        ch.nil? ? nil : ch.ord.language_code
+        ch&.ord.language_code
       end
       
       private
