@@ -1,5 +1,7 @@
 module ComplexScripts
-  class LanguagesController < AclController
+  class LanguagesController < ApplicationController
+    allow_unauthenticated_access only: %i[ index show ]
+    
     # GET /languages
     # GET /languages.xml
     def index
