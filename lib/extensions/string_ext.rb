@@ -18,6 +18,11 @@ module ComplexScripts
         @@new_collator ||= NewCollator.new
         @@new_collator.compare self, b.to_s
       end
+
+      def nep_compare(b)
+        @@nep_collator ||= ICU::Collation::Collator.new("ne")
+        @@nep_collator.compare self, b.to_s
+      end
       
       # Takes a string and spans characters in predefined unicode ranges with xml:lang and class attribute with
       # language code (ISO 369-3) for easy rendering. Also converts characters outside ascii range into NCR.
